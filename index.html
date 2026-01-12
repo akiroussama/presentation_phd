@@ -1255,8 +1255,13 @@
     <main id="slides-container">
 
         <!-- ==================== SLIDE 1: TITRE ==================== -->
-        <div class="slide active">
-            <div class="content-full text-center">
+        <div class="slide active" style="position: relative;">
+            <!-- Logo en fond centré -->
+            <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 0; opacity: 0.12;">
+                <img src="../logoBasira.png" alt="BASIRA Logo Background" style="height: 450px; width: auto;">
+            </div>
+
+            <div class="content-full text-center" style="position: relative; z-index: 1;">
                 <h1 class="hero-title">BASIRA<br /><span
                         style="font-size: 0.5em; font-weight: 500;">Boundary-Anticipatory Safety for Intelligent
                         Reinforcement Architecture</span></h1>
