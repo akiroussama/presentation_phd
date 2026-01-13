@@ -1315,26 +1315,36 @@
                         <div class="toc-item clickable" onclick="goToSlide(4)"><span><strong>2.</strong> Architecture 5
                                 Niveaux</span><span>5</span></div>
                         <div class="toc-item clickable" onclick="goToSlide(5)"
+                            style="background: linear-gradient(90deg, rgba(37, 99, 235, 0.08), white); border-left-color: var(--accent-blue);">
+                            <span><strong>2b.</strong> 🚀 Analogie Apollo → ISS</span><span>6</span>
+                        </div>
+                        <div class="toc-item clickable" onclick="goToSlide(6)"
+                            style="background: linear-gradient(90deg, rgba(124, 58, 237, 0.08), white); border-left-color: var(--accent-purple);">
+                            <span><strong>2c.</strong> ☢️ Leçon Tchernobyl</span><span>7</span>
+                        </div>
+                        <div class="toc-item clickable" onclick="goToSlide(7)"
                             style="background: linear-gradient(90deg, rgba(220, 38, 38, 0.08), white); border-left-color: #dc2626;">
-                            <span><strong>3.</strong> 🇹🇳 Exemple Tunisie (Hôpital Sahloul)</span><span>6</span></div>
-                        <div class="toc-item contrib clickable" onclick="goToSlide(6)"><span><strong>3b.</strong>
-                                Smart Délestage "Load Orchestrator" <span class="phd-badge">NEW</span></span><span>7</span></div>
-                        <div class="toc-item clickable" onclick="goToSlide(7)"><span><strong>4.</strong> Data Flow
-                                Pipeline</span><span>8</span></div>
-                        <div class="toc-item contrib clickable" onclick="goToSlide(8)"><span><strong>5.</strong>
-                                MH-U-CBF <span class="phd-badge">PhD</span></span><span>9-11</span></div>
+                            <span><strong>3.</strong> 🇹🇳 Exemple Tunisie (Hôpital Sahloul)</span><span>8</span>
+                        </div>
+                        <div class="toc-item contrib clickable" onclick="goToSlide(8)"><span><strong>3b.</strong>
+                                Smart Délestage "Load Orchestrator" <span
+                                    class="phd-badge">NEW</span></span><span>9</span></div>
+                        <div class="toc-item clickable" onclick="goToSlide(9)"><span><strong>4.</strong> Data Flow
+                                Pipeline</span><span>10</span></div>
+                        <div class="toc-item contrib clickable" onclick="goToSlide(10)"><span><strong>5.</strong>
+                                MH-U-CBF <span class="phd-badge">PhD</span></span><span>11-13</span></div>
                     </div>
                     <div>
-                        <div class="toc-item contrib clickable" onclick="goToSlide(11)"><span><strong>6.</strong> SAOCP
-                                <span class="phd-badge">PhD</span></span><span>12-13</span></div>
-                        <div class="toc-item contrib clickable" onclick="goToSlide(13)"><span><strong>7.</strong>
-                                OptimizedHybrid Shield <span class="phd-badge">PhD</span></span><span>14</span></div>
-                        <div class="toc-item clickable" onclick="goToSlide(14)"><span><strong>8.</strong> Résultats
-                                Expérimentaux</span><span>15-18</span></div>
-                        <div class="toc-item contrib clickable" onclick="goToSlide(18)"><span><strong>9.</strong>
-                                Contributions Scientifiques</span><span>19-20</span></div>
-                        <div class="toc-item clickable" onclick="goToSlide(21)"><span><strong>10.</strong>
-                                Conclusion</span><span>22</span></div>
+                        <div class="toc-item contrib clickable" onclick="goToSlide(13)"><span><strong>6.</strong> SAOCP
+                                <span class="phd-badge">PhD</span></span><span>14-15</span></div>
+                        <div class="toc-item contrib clickable" onclick="goToSlide(15)"><span><strong>7.</strong>
+                                OptimizedHybrid Shield <span class="phd-badge">PhD</span></span><span>16</span></div>
+                        <div class="toc-item clickable" onclick="goToSlide(16)"><span><strong>8.</strong> Résultats
+                                Expérimentaux</span><span>17-20</span></div>
+                        <div class="toc-item contrib clickable" onclick="goToSlide(20)"><span><strong>9.</strong>
+                                Contributions Scientifiques</span><span>21-22</span></div>
+                        <div class="toc-item clickable" onclick="goToSlide(23)"><span><strong>10.</strong>
+                                Conclusion</span><span>24</span></div>
                     </div>
                 </div>
 
@@ -1374,7 +1384,8 @@
 
                 <div class="info-box mt-2">
                     <div class="info-box-title">❓ Question Centrale</div>
-                    <p style="text-align: center; font-size: 1.1rem;">Comment garantir la sécurité d'un agent RL pendant l'<strong>apprentissage</strong> ET le <strong>déploiement</strong> ?</p>
+                    <p style="text-align: center; font-size: 1.1rem;">Comment garantir la sécurité d'un agent RL pendant
+                        l'<strong>apprentissage</strong> ET le <strong>déploiement</strong> ?</p>
                 </div>
 
                 <table class="mt-2">
@@ -1511,673 +1522,799 @@
         <div class="slide">
             <div class="content-single">
                 <div class="slide-header">
-                    <span class="section-badge">ANALOGIE</span>
-                    <h2 class="slide-title">Comprendre l'Architecture: Mission Apollo → ISS</h2>
+                    <span class="section-badge" style="background: linear-gradient(135deg, #3b82f6, #8b5cf6);">ANALOGIE</span>
+                    <h2 class="slide-title">🚀 Comprendre l'Architecture: Mission Apollo → ISS</h2>
                 </div>
 
-                <p class="text-center mb-2" style="color: var(--text-secondary);">
-                    <strong>Mission:</strong> Amarrer le vaisseau Apollo à la Station Spatiale Internationale
+                <p class="text-center mb-2" style="color: var(--text-secondary); font-size: 0.85rem;">
+                    <em>Scénario: Amarrage du vaisseau Apollo à la Station Spatiale Internationale</em>
                 </p>
 
-                <!-- Timeline verticale -->
-                <div style="max-width: 900px; margin: 0 auto;">
+                <div class="comparison-grid" style="gap: 1.5rem;">
+                    <!-- Colonne SANS Protection -->
+                    <div class="comparison-item"
+                        style="background: linear-gradient(135deg, rgba(239, 68, 68, 0.08), rgba(239, 68, 68, 0.02)); border: 2px solid rgba(239, 68, 68, 0.3);">
+                        <div class="comparison-title" style="color: #dc2626;">❌ Sans Architecture Multi-Niveaux</div>
 
-                    <!-- L4 -->
-                    <div style="display: flex; align-items: center; margin-bottom: 0.6rem; padding: 0.6rem; background: rgba(100, 116, 139, 0.08); border-radius: 10px; border-left: 4px solid #64748b;">
-                        <div style="font-size: 1.8rem; margin-right: 1rem;">📡</div>
-                        <div style="flex: 1;">
-                            <div style="font-weight: 700; color: #64748b;">LEVEL 4: Houston (Mission Control)</div>
-                            <div style="font-size: 0.85rem; color: var(--text-secondary);">Supervision depuis la Terre avec délai de quelques secondes</div>
-                            <div style="font-size: 0.8rem; font-style: italic; margin-top: 0.2rem;">"Apollo, on voit une anomalie sur le capteur 3. Surveillez ça."</div>
-                        </div>
-                        <div style="font-family: 'Fira Code', monospace; font-size: 0.75rem; color: #64748b;">~10s</div>
-                    </div>
+                        <div style="font-size: 0.85rem; margin-top: 0.8rem;">
+                            <div style="padding: 0.5rem; background: rgba(239, 68, 68, 0.1); border-radius: 6px; margin-bottom: 0.5rem;">
+                                <strong style="color: #dc2626;">🔭 Radar:</strong> "Débris à 5km" <span style="opacity: 0.6;">(détection seule)</span>
+                            </div>
 
-                    <!-- L3 -->
-                    <div style="display: flex; align-items: center; margin-bottom: 0.6rem; padding: 0.6rem; background: rgba(37, 99, 235, 0.08); border-radius: 10px; border-left: 4px solid var(--accent-blue);">
-                        <div style="font-size: 1.8rem; margin-right: 1rem;">🔭</div>
-                        <div style="flex: 1;">
-                            <div style="font-weight: 700; color: var(--accent-blue);">LEVEL 3: Ordinateur de Trajectoire (Oracle)</div>
-                            <div style="font-size: 0.85rem; color: var(--text-secondary);">Radar + calculs qui scannent l'espace et prédisent les dangers</div>
-                            <div style="font-size: 0.8rem; font-style: italic; margin-top: 0.2rem;">"Débris détecté à 5km. Probabilité collision 90%. Couloir sûr: étroit."</div>
-                        </div>
-                        <div style="font-family: 'Fira Code', monospace; font-size: 0.75rem; color: var(--accent-blue);">~1min</div>
-                    </div>
+                            <div style="padding: 0.5rem; background: rgba(239, 68, 68, 0.1); border-radius: 6px; margin-bottom: 0.5rem;">
+                                <strong style="color: #dc2626;">👨‍🚀 Pilote:</strong> "Poussée 50%! Ça passe!"
+                            </div>
 
-                    <!-- L2 -->
-                    <div style="display: flex; align-items: center; margin-bottom: 0.6rem; padding: 0.6rem; background: rgba(124, 58, 237, 0.08); border-radius: 10px; border-left: 4px solid var(--accent-purple);">
-                        <div style="font-size: 1.8rem; margin-right: 1rem;">👨‍🚀</div>
-                        <div style="flex: 1;">
-                            <div style="font-weight: 700; color: var(--accent-purple);">LEVEL 2: Commandant de Bord (CPO)</div>
-                            <div style="font-size: 0.85rem; color: var(--text-secondary);">Pilote la mission vers le port d'amarrage, optimise fuel et temps</div>
-                            <div style="font-size: 0.8rem; font-style: italic; margin-top: 0.2rem;">"Poussée avant 50% ! On vise le docking dans 3 minutes."</div>
-                        </div>
-                        <div style="font-family: 'Fira Code', monospace; font-size: 0.75rem; color: var(--accent-purple);">~1s</div>
-                    </div>
+                            <div style="padding: 0.5rem; background: rgba(239, 68, 68, 0.15); border-radius: 6px; margin-bottom: 0.5rem;">
+                                <strong style="color: #dc2626;">🚫 L1:</strong> <span style="opacity: 0.5;">(n'existe pas)</span>
+                            </div>
 
-                    <!-- L1 -->
-                    <div style="display: flex; align-items: center; margin-bottom: 0.6rem; padding: 0.6rem; background: rgba(16, 185, 129, 0.12); border-radius: 10px; border-left: 4px solid var(--accent-green);">
-                        <div style="font-size: 1.8rem; margin-right: 1rem;">🛡️</div>
-                        <div style="flex: 1;">
-                            <div style="font-weight: 700; color: var(--accent-green);">LEVEL 1: Système d'Évitement (MH-U-CBF) <span class="phd-badge">PhD</span></div>
-                            <div style="font-size: 0.85rem; color: var(--text-secondary);">Code de sécurité critique qui tourne en boucle rapide</div>
-                            <div style="font-size: 0.8rem; font-style: italic; margin-top: 0.2rem;">"⚠️ Vitesse trop élevée pour l'approche ! Je corrige: 50% → 30%"</div>
-                        </div>
-                        <div style="font-family: 'Fira Code', monospace; font-size: 0.75rem; color: var(--accent-green);">10-50ms</div>
-                    </div>
-
-                    <!-- L0 -->
-                    <div style="display: flex; align-items: center; padding: 0.6rem; background: rgba(16, 185, 129, 0.2); border-radius: 10px; border-left: 4px solid var(--accent-cyan); border: 2px solid var(--accent-green);">
-                        <div style="font-size: 1.8rem; margin-right: 1rem;">⚙️</div>
-                        <div style="flex: 1;">
-                            <div style="font-weight: 700; color: var(--accent-cyan);">LEVEL 0: Amortisseurs de Docking (OptimizedHybrid) <span class="phd-badge">PhD</span></div>
-                            <div style="font-size: 0.85rem; color: var(--text-secondary);">Ressorts et coussins mécaniques du port d'amarrage</div>
-                            <div style="font-size: 0.8rem; font-style: italic; margin-top: 0.2rem;">"CONTACT! La mécanique absorbe le choc final → Mission sauvée!"</div>
-                        </div>
-                        <div style="font-family: 'Fira Code', monospace; font-size: 0.75rem; color: var(--accent-cyan);"><10ms</div>
-                    </div>
-
-                </div>
-
-                <div class="success-box mt-2" style="text-align: center;">
-                    <div class="success-box-title">🧅 Principe "Oignon"</div>
-                    <p style="margin: 0;">Chaque niveau <strong>protège contre les échecs</strong> du niveau supérieur. Si le Commandant fait une erreur → L1 corrige. Si L1 échoue → L0 absorbe.</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- ==================== SLIDE 5ter: EXEMPLE TUNISIE ==================== -->
-        <div class="slide">
-            <div class="content-single">
-                <div class="slide-header">
-                    <span class="section-badge" style="background: linear-gradient(135deg, #dc2626, #ea580c);">CAS
-                        RÉEL</span>
-                    <h2 class="slide-title">Exemple: Hôpital Sahloul, Sousse 🇹🇳</h2>
-                </div>
-
-                <!-- Contexte et Problème -->
-                <div class="grid-2" style="gap: 1rem;">
-                    <div class="card"
-                        style="background: linear-gradient(135deg, rgba(239, 68, 68, 0.1), rgba(234, 88, 12, 0.1)); border-left: 4px solid #dc2626;">
-                        <div class="card-title" style="color: #dc2626;">⚠️ L'Incident (14h32, Août)</div>
-                        <p class="card-text"><strong>Nuage de sable du Sahara</strong> arrive soudainement</p>
-                        <div
-                            style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem; margin-top: 0.5rem; font-size: 0.85rem;">
-                            <div>PV: <strong style="color: #dc2626;">420 → 80 kW</strong></div>
-                            <div>Déficit: <strong style="color: #dc2626;">340 kW!</strong></div>
-                            <div>T°: 42°C (clim à fond)</div>
-                            <div>Charges: Blocs opératoires</div>
+                            <div style="padding: 0.5rem; background: rgba(239, 68, 68, 0.2); border-radius: 6px; text-align: center;">
+                                <strong style="color: #dc2626; font-size: 1.1rem;">💥 COLLISION</strong><br/>
+                                <span style="font-size: 0.75rem;">Pas de prédiction, pas de filtre de sécurité</span>
+                            </div>
                         </div>
                     </div>
-                    <div class="card"
-                        style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border-left: 4px solid var(--accent-green);">
-                        <div class="card-title" style="color: var(--accent-green);">✅ Résultat Final</div>
-                        <p class="card-text"><strong>0 violation</strong>, IRM et blocs opératoires OK</p>
-                        <div
-                            style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem; margin-top: 0.5rem; font-size: 0.85rem;">
-                            <div>V: 228.5 → <strong style="color: var(--accent-green);">229.8V</strong> ✅</div>
-                            <div>f: 49.91 → <strong style="color: var(--accent-green);">49.98Hz</strong> ✅</div>
-                            <div>Batterie: -253 kW</div>
-                            <div>STEG: +81 kW</div>
+
+                    <!-- Colonne AVEC Architecture 5 Niveaux -->
+                    <div class="comparison-item"
+                        style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.08), rgba(16, 185, 129, 0.02)); border: 2px solid rgba(16, 185, 129, 0.3);">
+                        <div class="comparison-title" style="color: var(--accent-green);">✅ Avec Architecture BASIRA</div>
+
+                        <div style="font-size: 0.85rem; margin-top: 0.8rem;">
+                            <div style="padding: 0.5rem; background: rgba(16, 185, 129, 0.1); border-radius: 6px; margin-bottom: 0.5rem;">
+                                <strong style="color: var(--accent-green);">L3 (SAOCP):</strong> "À 50%, collision dans 12s <strong>[IC 90%]</strong>"
+                            </div>
+
+                            <div style="padding: 0.5rem; background: rgba(16, 185, 129, 0.1); border-radius: 6px; margin-bottom: 0.5rem;">
+                                <strong style="color: var(--accent-green);">L2 (Pilote):</strong> "Poussée 50%! Ça passe!"
+                            </div>
+
+                            <div style="padding: 0.5rem; background: rgba(16, 185, 129, 0.15); border-radius: 6px; margin-bottom: 0.5rem;">
+                                <strong style="color: var(--accent-green);">L1 (MH-U-CBF):</strong> "🚫 Bounds violés! 50% → 30%" ✅
+                            </div>
+
+                            <div style="padding: 0.5rem; background: rgba(16, 185, 129, 0.2); border-radius: 6px; text-align: center;">
+                                <strong style="color: var(--accent-green); font-size: 1.1rem;">🟢 AMARRAGE RÉUSSI</strong><br/>
+                                <span style="font-size: 0.75rem;">L0 (Spring) absorbe le choc résiduel: 0.8 m/s</span>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Timeline des 5 niveaux -->
-                <div style="margin-top: 1rem; position: relative;">
-                    <!-- Ligne de temps -->
-                    <div
-                        style="position: absolute; left: 50px; top: 0; bottom: 0; width: 3px; background: linear-gradient(180deg, var(--accent-blue), var(--accent-purple), var(--accent-green));">
-                    </div>
-
-                    <!-- Level 4 -->
-                    <div style="display: flex; align-items: center; margin-bottom: 0.4rem; position: relative;">
-                        <div
-                            style="width: 45px; text-align: right; font-family: 'Fira Code', monospace; font-size: 0.7rem; color: var(--text-secondary);">
-                            +8s</div>
-                        <div
-                            style="width: 20px; height: 20px; background: var(--accent-blue); border-radius: 50%; margin: 0 10px; z-index: 1; display: flex; align-items: center; justify-content: center; font-size: 0.6rem; color: white; font-weight: bold;">
-                            4</div>
-                        <div
-                            style="flex: 1; background: rgba(37, 99, 235, 0.1); padding: 0.4rem 0.8rem; border-radius: 8px; font-size: 0.8rem;">
-                            <strong>Interface</strong>: 📺 Alerte jaune sur SCADA → Opérateur Ahmed informé
-                        </div>
-                    </div>
-
-                    <!-- Level 3 -->
-                    <div style="display: flex; align-items: center; margin-bottom: 0.4rem; position: relative;">
-                        <div
-                            style="width: 45px; text-align: right; font-family: 'Fira Code', monospace; font-size: 0.7rem; color: var(--text-secondary);">
-                            +45s</div>
-                        <div
-                            style="width: 20px; height: 20px; background: var(--accent-purple); border-radius: 50%; margin: 0 10px; z-index: 1; display: flex; align-items: center; justify-content: center; font-size: 0.6rem; color: white; font-weight: bold;">
-                            3</div>
-                        <div
-                            style="flex: 1; background: rgba(124, 58, 237, 0.1); padding: 0.4rem 0.8rem; border-radius: 8px; font-size: 0.8rem;">
-                            <strong>SAOCP</strong>: 🔮 Prédit h=5: V∈[219.8,225.2]V, f∈[49.58,49.82]Hz → <span
-                                style="color: var(--accent-orange);">⚠️ Risque</span>
-                        </div>
-                    </div>
-
-                    <!-- Level 2 -->
-                    <div style="display: flex; align-items: center; margin-bottom: 0.4rem; position: relative;">
-                        <div
-                            style="width: 45px; text-align: right; font-family: 'Fira Code', monospace; font-size: 0.7rem; color: var(--text-secondary);">
-                            +800ms</div>
-                        <div
-                            style="width: 20px; height: 20px; background: var(--phd-secondary); border-radius: 50%; margin: 0 10px; z-index: 1; display: flex; align-items: center; justify-content: center; font-size: 0.6rem; color: white; font-weight: bold;">
-                            2</div>
-                        <div
-                            style="flex: 1; background: rgba(45, 90, 135, 0.1); padding: 0.4rem 0.8rem; border-radius: 8px; font-size: 0.8rem;">
-                            <strong>CPO</strong>: 🧠 Propose u<sub>RL</sub> = [Batt: <span
-                                style="color: var(--accent-orange);">+280kW</span>, STEG: +50kW] → <span
-                                style="color: var(--accent-orange);">Trop agressif!</span>
-                        </div>
-                    </div>
-
-                    <!-- Level 1 -->
-                    <div style="display: flex; align-items: center; margin-bottom: 0.4rem; position: relative;">
-                        <div
-                            style="width: 45px; text-align: right; font-family: 'Fira Code', monospace; font-size: 0.7rem; color: var(--accent-green); font-weight: bold;">
-                            +35ms</div>
-                        <div
-                            style="width: 20px; height: 20px; background: var(--accent-green); border-radius: 50%; margin: 0 10px; z-index: 1; display: flex; align-items: center; justify-content: center; font-size: 0.6rem; color: white; font-weight: bold;">
-                            1</div>
-                        <div
-                            style="flex: 1; background: rgba(16, 185, 129, 0.15); padding: 0.4rem 0.8rem; border-radius: 8px; font-size: 0.8rem; border: 1px solid rgba(16, 185, 129, 0.3);">
-                            <strong>MH-U-CBF</strong> <span class="phd-badge" style="font-size: 0.55rem;">PhD</span>:
-                            🛡️ h=5 viole B<sub>f</sub>! Corrige → [Batt: <span
-                                style="color: var(--accent-green);">250kW</span>, STEG: <span
-                                style="color: var(--accent-green);">80kW</span>]
-                        </div>
-                    </div>
-
-                    <!-- Level 0 -->
-                    <div style="display: flex; align-items: center; position: relative;">
-                        <div
-                            style="width: 45px; text-align: right; font-family: 'Fira Code', monospace; font-size: 0.7rem; color: var(--accent-green); font-weight: bold;">
-                            +8ms</div>
-                        <div
-                            style="width: 20px; height: 20px; background: linear-gradient(135deg, var(--accent-green), var(--accent-cyan)); border-radius: 50%; margin: 0 10px; z-index: 1; display: flex; align-items: center; justify-content: center; font-size: 0.6rem; color: white; font-weight: bold;">
-                            0</div>
-                        <div
-                            style="flex: 1; background: rgba(16, 185, 129, 0.2); padding: 0.4rem 0.8rem; border-radius: 8px; font-size: 0.8rem; border: 2px solid var(--accent-green);">
-                            <strong>OptimizedHybrid</strong> <span class="phd-badge"
-                                style="font-size: 0.55rem;">PhD</span>: ⚡ F<sub>spring</sub>=+2.77kW,
-                            F<sub>damp</sub>=+0.5kW → <strong style="color: var(--accent-green);">u<sub>safe</sub>
-                                envoyé!</strong>
-                        </div>
+                <!-- Mapping des niveaux -->
+                <div class="warning-box mt-2"
+                    style="border-color: rgba(59, 130, 246, 0.4); background: linear-gradient(135deg, rgba(59, 130, 246, 0.08), rgba(139, 92, 246, 0.08));">
+                    <div class="warning-box-title" style="color: var(--accent-blue);">🎯 Mapping Architecture → Réponse de + en + rapide</div>
+                    <div style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 0.5rem; font-size: 0.75rem; text-align: center;">
+                        <div><strong style="color: #64748b;">L4</strong><br/>Houston<br/><span style="opacity: 0.7;">Supervision</span></div>
+                        <div><strong style="color: var(--accent-blue);">L3</strong><br/>Radar<br/><span style="opacity: 0.7;">Prédiction</span></div>
+                        <div><strong style="color: var(--accent-purple);">L2</strong><br/>Pilote<br/><span style="opacity: 0.7;">Décision</span></div>
+                        <div><strong style="color: var(--accent-green);">L1</strong><br/>Shield<br/><span style="opacity: 0.7;">Filtrage</span></div>
+                        <div><strong style="color: var(--accent-cyan);">L0</strong><br/>Spring<br/><span style="opacity: 0.7;">Physique</span></div>
                     </div>
                 </div>
 
-                <!-- Message clé -->
-                <div class="success-box mt-2" style="text-align: center;">
-                    <div class="success-box-title">🧅 L'Oignon en Action</div>
-                    <p style="font-size: 0.9rem;">CPO voulait <strong>280kW</strong> (dangereux) → MH-U-CBF réduit à
-                        <strong>250kW</strong> → OptimizedHybrid ajoute <strong>+3.27kW</strong> de correction<br />
-                        <strong style="color: var(--accent-green);">Résultat: Blocs opératoires et IRM jamais
-                            interrompus!</strong>
+                <!-- Quote finale -->
+                <div style="margin-top: 1rem; padding: 1rem; background: linear-gradient(135deg, #3b82f6, #8b5cf6); border-radius: 12px; text-align: center;">
+                    <p style="color: white; font-size: 1rem; font-style: italic; margin: 0; line-height: 1.5;">
+                        "Chaque niveau <strong>protège contre les échecs</strong> du niveau supérieur.<br/>
+                        Si le Pilote fait une erreur → L1 corrige. Si L1 échoue → L0 absorbe."
                     </p>
                 </div>
             </div>
         </div>
 
-        <!-- ==================== SLIDE 5ter: SMART DELESTAGE ==================== -->
-        <div class="slide">
-            <div class="content-single">
-                <div class="slide-header">
-                    <span class="section-badge contrib">CONTRIBUTION PhD</span>
-                    <h2 class="slide-title">Smart Délestage: "Load Orchestrator" <span class="phd-badge">NEW</span></h2>
-                </div>
+        <!-- ==================== SLIDE 5ter: LEÇON TCHERNOBYL ==================== -->
+            <div class="slide">
+                <div class="content-single">
+                    <div class="slide-header">
+                        <span class="section-badge"
+                            style="background: linear-gradient(135deg, #dc2626, #7c3aed);">MOTIVATION</span>
+                        <h2 class="slide-title">La Leçon de Tchernobyl: Soft vs Hard Constraints</h2>
+                    </div>
 
-                <!-- Concept Load Orchestrator -->
-                <div class="info-box mb-2">
-                    <div class="info-box-title">🎯 Concept: Orchestration Intelligente des Charges</div>
-                    <p>Au lieu d'une <strong>coupure totale</strong> (catastrophe!), le système <strong>déleste progressivement</strong> les charges non-critiques selon leur niveau de criticité (C1-C5) et les <strong>restaure</strong> quand la situation s'améliore.</p>
-                </div>
+                    <p class="text-center mb-2" style="color: var(--text-secondary); font-size: 0.85rem;">
+                        <em>Analogie illustrant le principe fondamental de BASIRA</em>
+                    </p>
 
-                <!-- Tableau des criticités -->
-                <table style="font-size: 0.85rem;">
-                    <tr>
-                        <th style="width: 60px;">Niveau</th>
-                        <th>Catégorie</th>
-                        <th>Exemple Hôpital Sahloul</th>
-                        <th style="width: 100px;">Puissance</th>
-                        <th style="width: 100px;">Délestable?</th>
-                    </tr>
-                    <tr style="background: rgba(239, 68, 68, 0.15);">
-                        <td><strong style="color: #dc2626;">C1</strong></td>
-                        <td>🔴 VITAL</td>
-                        <td>Bloc Opératoire, Réanimation, Néonatologie</td>
-                        <td>140 kW</td>
-                        <td style="color: #dc2626; font-weight: bold;">❌ JAMAIS</td>
-                    </tr>
-                    <tr style="background: rgba(245, 158, 11, 0.15);">
-                        <td><strong style="color: #f59e0b;">C2</strong></td>
-                        <td>🟠 CRITIQUE</td>
-                        <td>IRM, Scanner CT, Dialyse</td>
-                        <td>170 kW</td>
-                        <td style="color: #f59e0b;">⚠️ Extrême</td>
-                    </tr>
-                    <tr style="background: rgba(234, 179, 8, 0.1);">
-                        <td><strong style="color: #eab308;">C3</strong></td>
-                        <td>🟡 IMPORTANT</td>
-                        <td>Radiologie, Laboratoire, Pharmacie (frigo)</td>
-                        <td>75 kW</td>
-                        <td style="color: #eab308;">✅ Si nécessaire</td>
-                    </tr>
-                    <tr style="background: rgba(16, 185, 129, 0.1);">
-                        <td><strong style="color: #10b981;">C4</strong></td>
-                        <td>🟢 CONFORT</td>
-                        <td>Climatisation Admin, Ascenseurs, Éclairage</td>
-                        <td>175 kW</td>
-                        <td style="color: #10b981;">✅ Facilement</td>
-                    </tr>
-                    <tr style="background: rgba(100, 116, 139, 0.1);">
-                        <td><strong style="color: #64748b;">C5</strong></td>
-                        <td>⚪ SECONDAIRE</td>
-                        <td>Cafétéria, Parking, Éclairage décoratif</td>
-                        <td>85 kW</td>
-                        <td style="color: #64748b;">✅ Toujours</td>
-                    </tr>
-                </table>
+                    <div class="comparison-grid" style="gap: 1.5rem;">
+                        <!-- Colonne 1986 -->
+                        <div class="comparison-item"
+                            style="background: linear-gradient(135deg, rgba(239, 68, 68, 0.08), rgba(239, 68, 68, 0.02)); border: 2px solid rgba(239, 68, 68, 0.3);">
+                            <div class="comparison-title" style="color: #dc2626;">☢️ 26 Avril 1986 - La Réalité</div>
 
-                <!-- Timeline de l'exemple -->
-                <div class="grid-2 mt-2" style="gap: 1rem;">
-                    <div class="card" style="padding: 0.8rem;">
-                        <div class="card-title" style="font-size: 0.95rem;">⚡ Incident: Déficit 340 kW</div>
-                        <div style="font-size: 0.8rem; line-height: 1.5;">
-                            <div style="margin-bottom: 0.3rem;"><strong>t+0ms:</strong> ❌ Couper C5 (85 kW)</div>
-                            <div style="margin-bottom: 0.3rem;"><strong>t+50ms:</strong> ❌ Couper Clim Admin (120 kW)</div>
-                            <div style="margin-bottom: 0.3rem;"><strong>t+60s:</strong> ❌ Couper Ascenseurs (30 kW)</div>
-                            <div style="margin-bottom: 0.3rem;"><strong>Parallèle:</strong> 🔋 Batterie +250 kW, ⚡ STEG +80 kW</div>
-                            <div style="color: var(--accent-green); font-weight: bold;">✅ Délestage: 247 kW → Déficit comblé!</div>
+                            <div style="font-size: 0.85rem; margin-top: 0.8rem;">
+                                <div
+                                    style="padding: 0.5rem; background: rgba(239, 68, 68, 0.1); border-radius: 6px; margin-bottom: 0.5rem;">
+                                    <strong style="color: #dc2626;">🔭 Capteurs:</strong> "Puissance instable" <span style="opacity: 0.6;">(alarme seule)</span>
+                                </div>
+
+                                <div
+                                    style="padding: 0.5rem; background: rgba(239, 68, 68, 0.1); border-radius: 6px; margin-bottom: 0.5rem;">
+                                    <strong style="color: #dc2626;">👨‍💼 Dyatlov:</strong> "On continue le test!"
+                                </div>
+
+                                <div
+                                    style="padding: 0.5rem; background: rgba(239, 68, 68, 0.15); border-radius: 6px; margin-bottom: 0.5rem;">
+                                    <strong style="color: #dc2626;">🚫 Interlocks:</strong> <span
+                                        style="text-decoration: line-through;">Désactivés sur ordre</span> ❌
+                                </div>
+
+                                <div
+                                    style="padding: 0.5rem; background: rgba(239, 68, 68, 0.2); border-radius: 6px; text-align: center;">
+                                    <strong style="color: #dc2626; font-size: 1.1rem;">💥 EXPLOSION</strong><br />
+                                    <span style="font-size: 0.75rem;">Pas de prédiction, interlocks désactivables</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Colonne BASIRA -->
+                        <div class="comparison-item"
+                            style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.08), rgba(16, 185, 129, 0.02)); border: 2px solid rgba(16, 185, 129, 0.3);">
+                            <div class="comparison-title" style="color: var(--accent-green);">🛡️ Avec la Philosophie
+                                BASIRA</div>
+
+                            <div style="font-size: 0.85rem; margin-top: 0.8rem;">
+                                <div
+                                    style="padding: 0.5rem; background: rgba(16, 185, 129, 0.1); border-radius: 6px; margin-bottom: 0.5rem;">
+                                    <strong style="color: var(--accent-green);">L3 (SAOCP):</strong> "Emballement dans 20s <strong>[IC 90%]</strong>"
+                                </div>
+
+                                <div
+                                    style="padding: 0.5rem; background: rgba(16, 185, 129, 0.1); border-radius: 6px; margin-bottom: 0.5rem;">
+                                    <strong style="color: var(--accent-green);">L2 (CPO):</strong> "On continue le test quand même!"
+                                </div>
+
+                                <div
+                                    style="padding: 0.5rem; background: rgba(16, 185, 129, 0.15); border-radius: 6px; margin-bottom: 0.5rem;">
+                                    <strong style="color: var(--accent-green);">L1 (MH-U-CBF):</strong> "🚫 Bounds violés! Barres insérées." ✅
+                                </div>
+
+                                <div
+                                    style="padding: 0.5rem; background: rgba(16, 185, 129, 0.2); border-radius: 6px; text-align: center;">
+                                    <strong style="color: var(--accent-green); font-size: 1.1rem;">🟢 RIEN NE SE
+                                        PASSE</strong><br />
+                                    <span style="font-size: 0.75rem;">L1 inviolable, même par Dyatlov</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="card" style="padding: 0.8rem;">
-                        <div class="card-title" style="font-size: 0.95rem;">🔄 Restauration (+15 min)</div>
-                        <div style="font-size: 0.8rem; line-height: 1.5;">
-                            <div style="margin-bottom: 0.3rem;"><strong>Priorité 1:</strong> ✅ Éclairage 100%</div>
-                            <div style="margin-bottom: 0.3rem;"><strong>Priorité 2:</strong> ✅ Ascenseurs</div>
-                            <div style="margin-bottom: 0.3rem;"><strong>Priorité 3:</strong> ✅ Clim Admin 50%</div>
-                            <div style="margin-bottom: 0.3rem;"><strong>Priorité 4:</strong> ⏳ Cafétéria (en attente)</div>
-                            <div style="color: var(--accent-green); font-weight: bold;">✅ Marge sécurité: +118 kW gardée</div>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="success-box mt-1" style="padding: 0.6rem 1rem;">
-                    <div class="success-box-title" style="font-size: 0.85rem;">🧅 Intégration Architecture: Level 2 - Load Orchestrator</div>
-                    <p style="font-size: 0.8rem; margin: 0;">CPO propose <code>shed_level=4</code> → Load Orchestrator calcule le plan optimal → MH-U-CBF valide les contraintes → <strong>Bloc Opératoire JAMAIS interrompu!</strong></p>
-                </div>
-            </div>
-        </div>
+                    <!-- La différence clé -->
+                    <div class="warning-box mt-2"
+                        style="border-color: rgba(124, 58, 237, 0.4); background: linear-gradient(135deg, rgba(124, 58, 237, 0.08), rgba(37, 99, 235, 0.08));">
+                        <div class="warning-box-title" style="color: var(--accent-purple);">🔑 La Différence
+                            Fondamentale</div>
+                        <p style="margin: 0;">À Tchernobyl, <strong>L2 pouvait désactiver L1</strong>. Avec BASIRA,
+                            <strong>L1 est mathématiquement inviolable</strong> — même par L2.
+                        </p>
+                    </div>
 
-        <!-- ==================== SLIDE 6: DATA FLOW ==================== -->
-        <div class="slide">
-            <div class="content-single">
-                <div class="slide-header">
-                    <span class="section-badge">DATA FLOW</span>
-                    <h2 class="slide-title">Pipeline Complet: Input → Output</h2>
-                </div>
-
-                <div class="dataflow-container">
-                    <div class="dataflow-box" style="background: #e0f2fe;">
-                        <strong>State s</strong><br />
-                        <small>V, f, SoC, P</small>
-                    </div>
-                    <span class="dataflow-arrow">→</span>
-                    <div class="dataflow-box">
-                        <strong>SAOCP</strong><br />
-                        <small>Bounds [L,U]</small>
-                    </div>
-                    <span class="dataflow-arrow">→</span>
-                    <div class="dataflow-box">
-                        <strong>CPO</strong><br />
-                        <small>u<sub>RL</sub></small>
-                    </div>
-                    <span class="dataflow-arrow">→</span>
-                    <div class="dataflow-box phd">
-                        <strong>MH-U-CBF</strong><br />
-                        <small>u<sub>filtered</sub></small>
-                    </div>
-                    <span class="dataflow-arrow">→</span>
-                    <div class="dataflow-box phd">
-                        <strong>Hybrid</strong><br />
-                        <small>u<sub>safe</sub></small>
-                    </div>
-                    <span class="dataflow-arrow">→</span>
-                    <div class="dataflow-box" style="background: #fef3c7;">
-                        <strong>Microgrid</strong><br />
-                        <small>s'</small>
-                    </div>
-                </div>
-
-                <div class="grid-2 mt-2">
-                    <div class="card">
-                        <div class="card-title">📥 Inputs</div>
-                        <ul class="feature-list">
-                            <li><code>s</code> : État système (V, f, SoC, P<sub>load</sub>, P<sub>pv</sub>)</li>
-                            <li><code>u<sub>RL</sub></code> : Action proposée par CPO</li>
-                            <li><code>Bounds</code> : Intervalles de confiance SAOCP</li>
-                            <li><code>h</code> : Horizons {1, 3, 5} steps</li>
-                        </ul>
-                    </div>
-                    <div class="card">
-                        <div class="card-title">📤 Outputs</div>
-                        <ul class="feature-list">
-                            <li><code>u<sub>safe</sub></code> : Action garantie sûre</li>
-                            <li><code>B(x)</code> : Valeurs CBF par contrainte</li>
-                            <li><code>Intervention %</code> : Taux de modification</li>
-                            <li><code>CSR</code> : Constraint Satisfaction Rate</li>
-                        </ul>
+                    <!-- Quote finale -->
+                    <div
+                        style="margin-top: 1rem; padding: 1rem; background: linear-gradient(135deg, var(--phd-primary), var(--accent-purple)); border-radius: 12px; text-align: center;">
+                        <p style="color: white; font-size: 1rem; font-style: italic; margin: 0; line-height: 1.5;">
+                            "À Tchernobyl, la sécurité était une <strong>procédure</strong> que l'on pouvait
+                            violer.<br />
+                            Avec BASIRA, la sécurité devient une <strong>loi physique</strong> inviolable."
+                        </p>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <!-- ==================== SLIDE 7: MH-U-CBF CONCEPT ==================== -->
-        <div class="slide">
-            <div class="content-single">
-                <div class="slide-header">
-                    <span class="section-badge contrib">CONTRIBUTION PhD</span>
-                    <h2 class="slide-title">MH-U-CBF: Concept</h2>
-                </div>
+            <!-- ==================== SLIDE 5quater: EXEMPLE TUNISIE ==================== -->
+            <div class="slide">
+                <div class="content-single">
+                    <div class="slide-header">
+                        <span class="section-badge" style="background: linear-gradient(135deg, #dc2626, #ea580c);">CAS
+                            RÉEL</span>
+                        <h2 class="slide-title">Exemple: Hôpital Sahloul, Sousse 🇹🇳</h2>
+                    </div>
 
-                <div class="comparison-grid">
-                    <div class="comparison-item">
-                        <div class="comparison-title">❌ CBF Classique</div>
-                        <div class="warning-box" style="padding: 0.6rem; margin: 0.5rem 0;">
-                            <p style="margin: 0; text-align: center;"><strong>Regarde 1 seul step ahead</strong></p>
+                    <!-- Contexte et Problème -->
+                    <div class="grid-2" style="gap: 1rem;">
+                        <div class="card"
+                            style="background: linear-gradient(135deg, rgba(239, 68, 68, 0.1), rgba(234, 88, 12, 0.1)); border-left: 4px solid #dc2626;">
+                            <div class="card-title" style="color: #dc2626;">⚠️ L'Incident (14h32, Août)</div>
+                            <p class="card-text"><strong>Nuage de sable du Sahara</strong> arrive soudainement</p>
+                            <div
+                                style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem; margin-top: 0.5rem; font-size: 0.85rem;">
+                                <div>PV: <strong style="color: #dc2626;">420 → 80 kW</strong></div>
+                                <div>Déficit: <strong style="color: #dc2626;">340 kW!</strong></div>
+                                <div>T°: 42°C (clim à fond)</div>
+                                <div>Charges: Blocs opératoires</div>
+                            </div>
                         </div>
-                        <ul class="feature-list mt-1">
-                            <li>Single-horizon: voit 1 step ahead</li>
-                            <li>Marges fixes: pas d'adaptation</li>
-                            <li>Conservatif: interventions excessives</li>
-                        </ul>
-                    </div>
-                    <div class="comparison-item">
-                        <div class="comparison-title">✅ MH-U-CBF (Innovation)</div>
-                        <div class="success-box" style="padding: 0.6rem; margin: 0.5rem 0;">
-                            <p style="margin: 0; text-align: center;"><strong>Regarde 1, 3, 5 steps ahead + Incertitude</strong></p>
+                        <div class="card"
+                            style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border-left: 4px solid var(--accent-green);">
+                            <div class="card-title" style="color: var(--accent-green);">✅ Résultat Final</div>
+                            <p class="card-text"><strong>0 violation</strong>, IRM et blocs opératoires OK</p>
+                            <div
+                                style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem; margin-top: 0.5rem; font-size: 0.85rem;">
+                                <div>V: 228.5 → <strong style="color: var(--accent-green);">229.8V</strong> ✅</div>
+                                <div>f: 49.91 → <strong style="color: var(--accent-green);">49.98Hz</strong> ✅</div>
+                                <div>Batterie: -253 kW</div>
+                                <div>STEG: +81 kW</div>
+                            </div>
                         </div>
-                        <ul class="feature-list mt-1">
-                            <li><strong>Multi-horizon</strong>: h ∈ {1, 3, 5} steps</li>
-                            <li><strong>Uncertainty-aware</strong>: marges adaptatives</li>
-                            <li><strong>Conformal bounds</strong>: garantie 90%</li>
-                        </ul>
                     </div>
-                </div>
 
-                <div class="success-box mt-2">
-                    <div class="success-box-title">💡 Idée Clé</div>
-                    <p>Au lieu de regarder seulement 1 step ahead, MH-U-CBF prédit sur <strong>plusieurs
-                            horizons</strong> et ajuste ses marges en fonction de l'<strong>incertitude
-                            quantifiée</strong> par SAOCP.</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- ==================== SLIDE 8: MH-U-CBF COMPOSANTS ==================== -->
-        <div class="slide">
-            <div class="content-single">
-                <div class="slide-header">
-                    <span class="section-badge contrib">CONTRIBUTION PhD</span>
-                    <h2 class="slide-title">MH-U-CBF: Composants Clés</h2>
-                </div>
-
-                <div class="grid-3">
-                    <div class="card text-center">
-                        <span class="card-icon">🔮</span>
-                        <div class="card-title">Prédiction Multi-Horizon</div>
-                        <p class="card-text">Prédit l'état futur à <strong>h = 1, 3, 5</strong> steps</p>
-                    </div>
-                    <div class="card text-center">
-                        <span class="card-icon">📊</span>
-                        <div class="card-title">Quantification Incertitude</div>
-                        <p class="card-text">Calcule les <strong>marges adaptatives</strong> via SAOCP</p>
-                    </div>
-                    <div class="card text-center">
-                        <span class="card-icon">🛡️</span>
-                        <div class="card-title">Filtrage CBF</div>
-                        <p class="card-text">Corrige l'action RL pour <strong>garantir la sécurité</strong></p>
-                    </div>
-                </div>
-
-                <div class="info-box mt-2">
-                    <div class="info-box-title">🎯 Principe de Fonctionnement</div>
-                    <p>Pour chaque horizon h ∈ {1, 3, 5}:</p>
-                    <ul class="feature-list">
-                        <li><strong>Étape 1:</strong> Prédire l'état futur x̂(t+h)</li>
-                        <li><strong>Étape 2:</strong> Calculer la marge d'incertitude δ(h)</li>
-                        <li><strong>Étape 3:</strong> Vérifier que la "barrière de sécurité" reste positive</li>
-                        <li><strong>Étape 4:</strong> Si violation prédite → corriger l'action minimalement</li>
-                    </ul>
-                </div>
-
-                <div class="success-box mt-2">
-                    <div class="success-box-title">💡 Avantage</div>
-                    <p>Modifie l'action RL <strong>le moins possible</strong> tout en garantissant la sécurité sur tous les horizons.</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- ==================== SLIDE 9: TIER SYSTEM ==================== -->
-        <div class="slide">
-            <div class="content-single">
-                <div class="slide-header">
-                    <span class="section-badge contrib">CONTRIBUTION PhD</span>
-                    <h2 class="slide-title">MH-U-CBF: Système de Tiers Adaptatif</h2>
-                </div>
-
-                <div class="tier-row tier-1">
-                    <strong>Tier 1</strong>
-                    <span>B(x) > 0.3</span>
-                    <span>slack = 1.0</span>
-                    <span style="color: var(--accent-green);">Zone Sûre</span>
-                </div>
-                <div class="tier-row tier-2">
-                    <strong>Tier 2</strong>
-                    <span>0.1 < B(x) ≤ 0.3</span>
-                            <span>slack = 0.7</span>
-                            <span style="color: var(--accent-blue);">Zone Caution</span>
-                </div>
-                <div class="tier-row tier-25">
-                    <strong>Tier 2.5</strong>
-                    <span>0.05 < B(x) ≤ 0.1</span>
-                            <span>slack = 0.4 + 0.1·h</span>
-                            <span style="color: var(--accent-purple);">Zone Critique <span
-                                    class="phd-badge">NEW</span></span>
-                </div>
-                <div class="tier-row tier-3">
-                    <strong>Tier 3</strong>
-                    <span>B(x) ≤ 0.05</span>
-                    <span>slack = 0.2</span>
-                    <span style="color: var(--accent-red);">Zone Danger</span>
-                </div>
-
-                <div class="success-box mt-2">
-                    <div class="success-box-title">🆕 Innovation Tier 2.5</div>
-                    <p>Dans la zone critique (0.05-0.1), le slack s'adapte <strong>par horizon</strong>:</p>
-                    <ul class="feature-list mt-1">
-                        <li>h=1: slack = 0.5 (proche, plus restrictif)</li>
-                        <li>h=3: slack = 0.7 (moyen terme, modéré)</li>
-                        <li>h=5: slack = 0.9 (long terme, plus flexible)</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <!-- ==================== SLIDE 10: SAOCP CONCEPT ==================== -->
-        <div class="slide">
-            <div class="content-single">
-                <div class="slide-header">
-                    <span class="section-badge contrib">CONTRIBUTION PhD</span>
-                    <h2 class="slide-title">SAOCP: Safety-Aware Online Conformal Prediction</h2>
-                </div>
-
-                <div class="comparison-grid">
-                    <div class="comparison-item">
-                        <div class="comparison-title">❌ Conformal Prediction Standard</div>
-                        <div class="warning-box" style="padding: 0.6rem; margin: 0.5rem 0;">
-                            <p style="margin: 0; text-align: center;"><strong>Mise à jour symétrique</strong></p>
+                    <!-- Timeline des 5 niveaux -->
+                    <div style="margin-top: 1rem; position: relative;">
+                        <!-- Ligne de temps -->
+                        <div
+                            style="position: absolute; left: 50px; top: 0; bottom: 0; width: 3px; background: linear-gradient(180deg, var(--accent-blue), var(--accent-purple), var(--accent-green));">
                         </div>
-                        <ul class="feature-list mt-1">
-                            <li>Traite toutes les erreurs également</li>
-                            <li>Pas de notion de sécurité</li>
-                            <li>Garantie de couverture 90%</li>
-                        </ul>
-                    </div>
-                    <div class="comparison-item">
-                        <div class="comparison-title">✅ SAOCP (Innovation) <span class="phd-badge">PhD</span></div>
-                        <div class="success-box" style="padding: 0.6rem; margin: 0.5rem 0;">
-                            <p style="margin: 0; text-align: center;"><strong>Mise à jour × Poids Sécurité</strong></p>
+
+                        <!-- Level 4 -->
+                        <div style="display: flex; align-items: center; margin-bottom: 0.4rem; position: relative;">
+                            <div
+                                style="width: 45px; text-align: right; font-family: 'Fira Code', monospace; font-size: 0.7rem; color: var(--text-secondary);">
+                                +8s</div>
+                            <div
+                                style="width: 20px; height: 20px; background: var(--accent-blue); border-radius: 50%; margin: 0 10px; z-index: 1; display: flex; align-items: center; justify-content: center; font-size: 0.6rem; color: white; font-weight: bold;">
+                                4</div>
+                            <div
+                                style="flex: 1; background: rgba(37, 99, 235, 0.1); padding: 0.4rem 0.8rem; border-radius: 8px; font-size: 0.8rem;">
+                                <strong>Interface</strong>: 📺 Alerte jaune sur SCADA → Opérateur Ahmed informé
+                            </div>
                         </div>
-                        <ul class="feature-list mt-1">
-                            <li><strong>Asymétrique</strong>: pénalise près des limites</li>
-                            <li><strong>Safety-aware</strong>: plus conservatif si danger</li>
-                            <li><strong>Online</strong>: adaptation temps réel</li>
-                        </ul>
-                    </div>
-                </div>
 
-                <div class="info-box mt-2">
-                    <div class="info-box-title">🔬 Idée Clé</div>
-                    <p><strong>Plus on est proche d'une violation</strong> → plus les intervalles de confiance sont larges → <strong>plus de marge de sécurité</strong></p>
-                </div>
+                        <!-- Level 3 -->
+                        <div style="display: flex; align-items: center; margin-bottom: 0.4rem; position: relative;">
+                            <div
+                                style="width: 45px; text-align: right; font-family: 'Fira Code', monospace; font-size: 0.7rem; color: var(--text-secondary);">
+                                +45s</div>
+                            <div
+                                style="width: 20px; height: 20px; background: var(--accent-purple); border-radius: 50%; margin: 0 10px; z-index: 1; display: flex; align-items: center; justify-content: center; font-size: 0.6rem; color: white; font-weight: bold;">
+                                3</div>
+                            <div
+                                style="flex: 1; background: rgba(124, 58, 237, 0.1); padding: 0.4rem 0.8rem; border-radius: 8px; font-size: 0.8rem;">
+                                <strong>SAOCP</strong>: 🔮 Prédit h=5: V∈[219.8,225.2]V, f∈[49.58,49.82]Hz → <span
+                                    style="color: var(--accent-orange);">⚠️ Risque</span>
+                            </div>
+                        </div>
 
-                <div class="grid-3 mt-2">
-                    <div class="card text-center">
-                        <span class="card-icon">🟢</span>
-                        <div class="card-title">Loin des limites</div>
-                        <p class="card-text">Intervalles <strong>étroits</strong><br/>Performance optimale</p>
+                        <!-- Level 2 -->
+                        <div style="display: flex; align-items: center; margin-bottom: 0.4rem; position: relative;">
+                            <div
+                                style="width: 45px; text-align: right; font-family: 'Fira Code', monospace; font-size: 0.7rem; color: var(--text-secondary);">
+                                +800ms</div>
+                            <div
+                                style="width: 20px; height: 20px; background: var(--phd-secondary); border-radius: 50%; margin: 0 10px; z-index: 1; display: flex; align-items: center; justify-content: center; font-size: 0.6rem; color: white; font-weight: bold;">
+                                2</div>
+                            <div
+                                style="flex: 1; background: rgba(45, 90, 135, 0.1); padding: 0.4rem 0.8rem; border-radius: 8px; font-size: 0.8rem;">
+                                <strong>CPO</strong>: 🧠 Propose u<sub>RL</sub> = [Batt: <span
+                                    style="color: var(--accent-orange);">+280kW</span>, STEG: +50kW] → <span
+                                    style="color: var(--accent-orange);">Trop agressif!</span>
+                            </div>
+                        </div>
+
+                        <!-- Level 1 -->
+                        <div style="display: flex; align-items: center; margin-bottom: 0.4rem; position: relative;">
+                            <div
+                                style="width: 45px; text-align: right; font-family: 'Fira Code', monospace; font-size: 0.7rem; color: var(--accent-green); font-weight: bold;">
+                                +35ms</div>
+                            <div
+                                style="width: 20px; height: 20px; background: var(--accent-green); border-radius: 50%; margin: 0 10px; z-index: 1; display: flex; align-items: center; justify-content: center; font-size: 0.6rem; color: white; font-weight: bold;">
+                                1</div>
+                            <div
+                                style="flex: 1; background: rgba(16, 185, 129, 0.15); padding: 0.4rem 0.8rem; border-radius: 8px; font-size: 0.8rem; border: 1px solid rgba(16, 185, 129, 0.3);">
+                                <strong>MH-U-CBF</strong> <span class="phd-badge"
+                                    style="font-size: 0.55rem;">PhD</span>:
+                                🛡️ h=5 viole B<sub>f</sub>! Corrige → [Batt: <span
+                                    style="color: var(--accent-green);">250kW</span>, STEG: <span
+                                    style="color: var(--accent-green);">80kW</span>]
+                            </div>
+                        </div>
+
+                        <!-- Level 0 -->
+                        <div style="display: flex; align-items: center; position: relative;">
+                            <div
+                                style="width: 45px; text-align: right; font-family: 'Fira Code', monospace; font-size: 0.7rem; color: var(--accent-green); font-weight: bold;">
+                                +8ms</div>
+                            <div
+                                style="width: 20px; height: 20px; background: linear-gradient(135deg, var(--accent-green), var(--accent-cyan)); border-radius: 50%; margin: 0 10px; z-index: 1; display: flex; align-items: center; justify-content: center; font-size: 0.6rem; color: white; font-weight: bold;">
+                                0</div>
+                            <div
+                                style="flex: 1; background: rgba(16, 185, 129, 0.2); padding: 0.4rem 0.8rem; border-radius: 8px; font-size: 0.8rem; border: 2px solid var(--accent-green);">
+                                <strong>OptimizedHybrid</strong> <span class="phd-badge"
+                                    style="font-size: 0.55rem;">PhD</span>: ⚡ F<sub>spring</sub>=+2.77kW,
+                                F<sub>damp</sub>=+0.5kW → <strong style="color: var(--accent-green);">u<sub>safe</sub>
+                                    envoyé!</strong>
+                            </div>
+                        </div>
                     </div>
-                    <div class="card text-center">
-                        <span class="card-icon">🟡</span>
-                        <div class="card-title">Zone intermédiaire</div>
-                        <p class="card-text">Intervalles <strong>modérés</strong><br/>Équilibre</p>
-                    </div>
-                    <div class="card text-center">
-                        <span class="card-icon">🔴</span>
-                        <div class="card-title">Proche des limites</div>
-                        <p class="card-text">Intervalles <strong>larges</strong><br/>Sécurité maximale</p>
+
+                    <!-- Message clé -->
+                    <div class="success-box mt-2" style="text-align: center;">
+                        <div class="success-box-title">🧅 L'Oignon en Action</div>
+                        <p style="font-size: 0.9rem;">CPO voulait <strong>280kW</strong> (dangereux) → MH-U-CBF réduit à
+                            <strong>250kW</strong> → OptimizedHybrid ajoute <strong>+3.27kW</strong> de correction<br />
+                            <strong style="color: var(--accent-green);">Résultat: Blocs opératoires et IRM jamais
+                                interrompus!</strong>
+                        </p>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <!-- ==================== SLIDE 11: SAOCP INTEGRATION ==================== -->
-        <div class="slide">
-            <div class="content-single">
-                <div class="slide-header">
-                    <span class="section-badge contrib">CONTRIBUTION PhD</span>
-                    <h2 class="slide-title">SAOCP: Intégration avec MH-U-CBF</h2>
-                </div>
+            <!-- ==================== SLIDE 5ter: SMART DELESTAGE ==================== -->
+            <div class="slide">
+                <div class="content-single">
+                    <div class="slide-header">
+                        <span class="section-badge contrib">CONTRIBUTION PhD</span>
+                        <h2 class="slide-title">Smart Délestage: "Load Orchestrator" <span class="phd-badge">NEW</span>
+                        </h2>
+                    </div>
 
-                <div class="dataflow-container">
-                    <div class="dataflow-box">
-                        <strong>Historique</strong><br />
-                        <small>Erreurs passées</small>
+                    <!-- Concept Load Orchestrator -->
+                    <div class="info-box mb-2">
+                        <div class="info-box-title">🎯 Concept: Orchestration Intelligente des Charges</div>
+                        <p>Au lieu d'une <strong>coupure totale</strong> (catastrophe!), le système <strong>déleste
+                                progressivement</strong> les charges non-critiques selon leur niveau de criticité
+                            (C1-C5) et les <strong>restaure</strong> quand la situation s'améliore.</p>
                     </div>
-                    <span class="dataflow-arrow">→</span>
-                    <div class="dataflow-box" style="background: #fef3c7;">
-                        <strong>SAOCP</strong><br />
-                        <small>Quantile adaptatif</small>
-                    </div>
-                    <span class="dataflow-arrow">→</span>
-                    <div class="dataflow-box">
-                        <strong>Bounds [L, U]</strong><br />
-                        <small>Par horizon h</small>
-                    </div>
-                    <span class="dataflow-arrow">→</span>
-                    <div class="dataflow-box phd">
-                        <strong>MH-U-CBF</strong><br />
-                        <small>δ<sub>h</sub> = f(bounds)</small>
-                    </div>
-                </div>
 
-                <div class="grid-2 mt-2">
-                    <div>
-                        <h3 style="font-size: 1rem; margin-bottom: 0.8rem;">Marges par Horizon</h3>
-                        <div class="info-box" style="padding: 0.6rem; margin: 0.5rem 0;">
-                            <p style="margin: 0; text-align: center;"><strong>Marge = Facteur × Largeur Intervalle</strong></p>
+                    <!-- Tableau des criticités -->
+                    <table style="font-size: 0.85rem;">
+                        <tr>
+                            <th style="width: 60px;">Niveau</th>
+                            <th>Catégorie</th>
+                            <th>Exemple Hôpital Sahloul</th>
+                            <th style="width: 100px;">Puissance</th>
+                            <th style="width: 100px;">Délestable?</th>
+                        </tr>
+                        <tr style="background: rgba(239, 68, 68, 0.15);">
+                            <td><strong style="color: #dc2626;">C1</strong></td>
+                            <td>🔴 VITAL</td>
+                            <td>Bloc Opératoire, Réanimation, Néonatologie</td>
+                            <td>140 kW</td>
+                            <td style="color: #dc2626; font-weight: bold;">❌ JAMAIS</td>
+                        </tr>
+                        <tr style="background: rgba(245, 158, 11, 0.15);">
+                            <td><strong style="color: #f59e0b;">C2</strong></td>
+                            <td>🟠 CRITIQUE</td>
+                            <td>IRM, Scanner CT, Dialyse</td>
+                            <td>170 kW</td>
+                            <td style="color: #f59e0b;">⚠️ Extrême</td>
+                        </tr>
+                        <tr style="background: rgba(234, 179, 8, 0.1);">
+                            <td><strong style="color: #eab308;">C3</strong></td>
+                            <td>🟡 IMPORTANT</td>
+                            <td>Radiologie, Laboratoire, Pharmacie (frigo)</td>
+                            <td>75 kW</td>
+                            <td style="color: #eab308;">✅ Si nécessaire</td>
+                        </tr>
+                        <tr style="background: rgba(16, 185, 129, 0.1);">
+                            <td><strong style="color: #10b981;">C4</strong></td>
+                            <td>🟢 CONFORT</td>
+                            <td>Climatisation Admin, Ascenseurs, Éclairage</td>
+                            <td>175 kW</td>
+                            <td style="color: #10b981;">✅ Facilement</td>
+                        </tr>
+                        <tr style="background: rgba(100, 116, 139, 0.1);">
+                            <td><strong style="color: #64748b;">C5</strong></td>
+                            <td>⚪ SECONDAIRE</td>
+                            <td>Cafétéria, Parking, Éclairage décoratif</td>
+                            <td>85 kW</td>
+                            <td style="color: #64748b;">✅ Toujours</td>
+                        </tr>
+                    </table>
+
+                    <!-- Timeline de l'exemple -->
+                    <div class="grid-2 mt-2" style="gap: 1rem;">
+                        <div class="card" style="padding: 0.8rem;">
+                            <div class="card-title" style="font-size: 0.95rem;">⚡ Incident: Déficit 340 kW</div>
+                            <div style="font-size: 0.8rem; line-height: 1.5;">
+                                <div style="margin-bottom: 0.3rem;"><strong>t+0ms:</strong> ❌ Couper C5 (85 kW)</div>
+                                <div style="margin-bottom: 0.3rem;"><strong>t+50ms:</strong> ❌ Couper Clim Admin (120
+                                    kW)</div>
+                                <div style="margin-bottom: 0.3rem;"><strong>t+60s:</strong> ❌ Couper Ascenseurs (30 kW)
+                                </div>
+                                <div style="margin-bottom: 0.3rem;"><strong>Parallèle:</strong> 🔋 Batterie +250 kW, ⚡
+                                    STEG +80 kW</div>
+                                <div style="color: var(--accent-green); font-weight: bold;">✅ Délestage: 247 kW →
+                                    Déficit comblé!</div>
+                            </div>
                         </div>
-                        <table class="mt-1">
-                            <tr>
-                                <th>h</th>
-                                <th>k<sub>h</sub></th>
-                                <th>Interprétation</th>
-                            </tr>
-                            <tr>
-                                <td>1</td>
-                                <td>0.3</td>
-                                <td>Court terme, marge petite</td>
-                            </tr>
-                            <tr>
-                                <td>3</td>
-                                <td>0.5</td>
-                                <td>Moyen terme, modéré</td>
-                            </tr>
-                            <tr>
-                                <td>5</td>
-                                <td>0.7</td>
-                                <td>Long terme, marge grande</td>
-                            </tr>
-                        </table>
+                        <div class="card" style="padding: 0.8rem;">
+                            <div class="card-title" style="font-size: 0.95rem;">🔄 Restauration (+15 min)</div>
+                            <div style="font-size: 0.8rem; line-height: 1.5;">
+                                <div style="margin-bottom: 0.3rem;"><strong>Priorité 1:</strong> ✅ Éclairage 100%</div>
+                                <div style="margin-bottom: 0.3rem;"><strong>Priorité 2:</strong> ✅ Ascenseurs</div>
+                                <div style="margin-bottom: 0.3rem;"><strong>Priorité 3:</strong> ✅ Clim Admin 50%</div>
+                                <div style="margin-bottom: 0.3rem;"><strong>Priorité 4:</strong> ⏳ Cafétéria (en
+                                    attente)</div>
+                                <div style="color: var(--accent-green); font-weight: bold;">✅ Marge sécurité: +118 kW
+                                    gardée</div>
+                            </div>
+                        </div>
                     </div>
-                    <div>
-                        <h3 style="font-size: 1rem; margin-bottom: 0.8rem;">Propriétés</h3>
-                        <div class="success-box">
+
+                    <div class="success-box mt-1" style="padding: 0.6rem 1rem;">
+                        <div class="success-box-title" style="font-size: 0.85rem;">🧅 Intégration Architecture: Level 2
+                            - Load Orchestrator</div>
+                        <p style="font-size: 0.8rem; margin: 0;">CPO propose <code>shed_level=4</code> → Load
+                            Orchestrator calcule le plan optimal → MH-U-CBF valide les contraintes → <strong>Bloc
+                                Opératoire JAMAIS interrompu!</strong></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ==================== SLIDE 6: DATA FLOW ==================== -->
+            <div class="slide">
+                <div class="content-single">
+                    <div class="slide-header">
+                        <span class="section-badge">DATA FLOW</span>
+                        <h2 class="slide-title">Pipeline Complet: Input → Output</h2>
+                    </div>
+
+                    <div class="dataflow-container">
+                        <div class="dataflow-box" style="background: #e0f2fe;">
+                            <strong>State s</strong><br />
+                            <small>V, f, SoC, P</small>
+                        </div>
+                        <span class="dataflow-arrow">→</span>
+                        <div class="dataflow-box">
+                            <strong>SAOCP</strong><br />
+                            <small>Bounds [L,U]</small>
+                        </div>
+                        <span class="dataflow-arrow">→</span>
+                        <div class="dataflow-box">
+                            <strong>CPO</strong><br />
+                            <small>u<sub>RL</sub></small>
+                        </div>
+                        <span class="dataflow-arrow">→</span>
+                        <div class="dataflow-box phd">
+                            <strong>MH-U-CBF</strong><br />
+                            <small>u<sub>filtered</sub></small>
+                        </div>
+                        <span class="dataflow-arrow">→</span>
+                        <div class="dataflow-box phd">
+                            <strong>Hybrid</strong><br />
+                            <small>u<sub>safe</sub></small>
+                        </div>
+                        <span class="dataflow-arrow">→</span>
+                        <div class="dataflow-box" style="background: #fef3c7;">
+                            <strong>Microgrid</strong><br />
+                            <small>s'</small>
+                        </div>
+                    </div>
+
+                    <div class="grid-2 mt-2">
+                        <div class="card">
+                            <div class="card-title">📥 Inputs</div>
                             <ul class="feature-list">
-                                <li><strong>Garantie statistique</strong>: 90% coverage (Holm-Bonferroni)</li>
-                                <li><strong>Adaptation online</strong>: réagit aux changements de distribution</li>
-                                <li><strong>Safety-aware</strong>: plus conservatif près des limites</li>
+                                <li><code>s</code> : État système (V, f, SoC, P<sub>load</sub>, P<sub>pv</sub>)</li>
+                                <li><code>u<sub>RL</sub></code> : Action proposée par CPO</li>
+                                <li><code>Bounds</code> : Intervalles de confiance SAOCP</li>
+                                <li><code>h</code> : Horizons {1, 3, 5} steps</li>
+                            </ul>
+                        </div>
+                        <div class="card">
+                            <div class="card-title">📤 Outputs</div>
+                            <ul class="feature-list">
+                                <li><code>u<sub>safe</sub></code> : Action garantie sûre</li>
+                                <li><code>B(x)</code> : Valeurs CBF par contrainte</li>
+                                <li><code>Intervention %</code> : Taux de modification</li>
+                                <li><code>CSR</code> : Constraint Satisfaction Rate</li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <!-- ==================== SLIDE 12: OPTIMIZEDHYBRID ==================== -->
-        <div class="slide">
-            <div class="content-single">
-                <div class="slide-header">
-                    <span class="section-badge contrib">BREAKTHROUGH</span>
-                    <h2 class="slide-title">OptimizedHybrid: Physics-Based Safety Shield <span
-                            class="phd-badge">Core</span></h2>
-                </div>
+            <!-- ==================== SLIDE 7: MH-U-CBF CONCEPT ==================== -->
+            <div class="slide">
+                <div class="content-single">
+                    <div class="slide-header">
+                        <span class="section-badge contrib">CONTRIBUTION PhD</span>
+                        <h2 class="slide-title">MH-U-CBF: Concept</h2>
+                    </div>
 
-                <div class="info-box mb-2">
-                    <div class="info-box-title">🎯 Principe: Ressort + Amortisseur</div>
-                    <p><strong>Action finale</strong> = Action RL + Force de rappel (ressort) + Force d'amortissement</p>
-                </div>
-
-                <div class="grid-2">
-                    <div>
-                        <h3 style="font-size: 1rem; margin-bottom: 0.8rem;">Mécanisme Physique</h3>
-                        <div class="grid-2" style="gap: 0.5rem;">
-                            <div class="card text-center" style="padding: 0.8rem;">
-                                <span class="card-icon">🔄</span>
-                                <div class="card-title" style="font-size: 0.9rem;">Ressort</div>
-                                <p class="card-text" style="font-size: 0.8rem;">Ramène vers le centre de la zone sûre</p>
+                    <div class="comparison-grid">
+                        <div class="comparison-item">
+                            <div class="comparison-title">❌ CBF Classique</div>
+                            <div class="warning-box" style="padding: 0.6rem; margin: 0.5rem 0;">
+                                <p style="margin: 0; text-align: center;"><strong>Regarde 1 seul step ahead</strong></p>
                             </div>
-                            <div class="card text-center" style="padding: 0.8rem;">
-                                <span class="card-icon">🛑</span>
-                                <div class="card-title" style="font-size: 0.9rem;">Amortisseur</div>
-                                <p class="card-text" style="font-size: 0.8rem;">Évite les oscillations</p>
-                            </div>
+                            <ul class="feature-list mt-1">
+                                <li>Single-horizon: voit 1 step ahead</li>
+                                <li>Marges fixes: pas d'adaptation</li>
+                                <li>Conservatif: interventions excessives</li>
+                            </ul>
                         </div>
-
-                        <div class="success-box mt-1">
-                            <div class="success-box-title">✅ Garanties</div>
-                            <ul class="feature-list">
-                                <li><strong>Stabilité</strong>: Convergence garantie</li>
-                                <li><strong>Robustesse</strong>: Résiste aux perturbations</li>
-                                <li><strong>Latence</strong>: < 10ms</li>
+                        <div class="comparison-item">
+                            <div class="comparison-title">✅ MH-U-CBF (Innovation)</div>
+                            <div class="success-box" style="padding: 0.6rem; margin: 0.5rem 0;">
+                                <p style="margin: 0; text-align: center;"><strong>Regarde 1, 3, 5 steps ahead +
+                                        Incertitude</strong></p>
+                            </div>
+                            <ul class="feature-list mt-1">
+                                <li><strong>Multi-horizon</strong>: h ∈ {1, 3, 5} steps</li>
+                                <li><strong>Uncertainty-aware</strong>: marges adaptatives</li>
+                                <li><strong>Conformal bounds</strong>: garantie 90%</li>
                             </ul>
                         </div>
                     </div>
+
+                    <div class="success-box mt-2">
+                        <div class="success-box-title">💡 Idée Clé</div>
+                        <p>Au lieu de regarder seulement 1 step ahead, MH-U-CBF prédit sur <strong>plusieurs
+                                horizons</strong> et ajuste ses marges en fonction de l'<strong>incertitude
+                                quantifiée</strong> par SAOCP.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ==================== SLIDE 8: MH-U-CBF COMPOSANTS ==================== -->
+            <div class="slide">
+                <div class="content-single">
+                    <div class="slide-header">
+                        <span class="section-badge contrib">CONTRIBUTION PhD</span>
+                        <h2 class="slide-title">MH-U-CBF: Composants Clés</h2>
+                    </div>
+
+                    <div class="grid-3">
+                        <div class="card text-center">
+                            <span class="card-icon">🔮</span>
+                            <div class="card-title">Prédiction Multi-Horizon</div>
+                            <p class="card-text">Prédit l'état futur à <strong>h = 1, 3, 5</strong> steps</p>
+                        </div>
+                        <div class="card text-center">
+                            <span class="card-icon">📊</span>
+                            <div class="card-title">Quantification Incertitude</div>
+                            <p class="card-text">Calcule les <strong>marges adaptatives</strong> via SAOCP</p>
+                        </div>
+                        <div class="card text-center">
+                            <span class="card-icon">🛡️</span>
+                            <div class="card-title">Filtrage CBF</div>
+                            <p class="card-text">Corrige l'action RL pour <strong>garantir la sécurité</strong></p>
+                        </div>
+                    </div>
+
+                    <div class="info-box mt-2">
+                        <div class="info-box-title">🎯 Principe de Fonctionnement</div>
+                        <p>Pour chaque horizon h ∈ {1, 3, 5}:</p>
+                        <ul class="feature-list">
+                            <li><strong>Étape 1:</strong> Prédire l'état futur x̂(t+h)</li>
+                            <li><strong>Étape 2:</strong> Calculer la marge d'incertitude δ(h)</li>
+                            <li><strong>Étape 3:</strong> Vérifier que la "barrière de sécurité" reste positive</li>
+                            <li><strong>Étape 4:</strong> Si violation prédite → corriger l'action minimalement</li>
+                        </ul>
+                    </div>
+
+                    <div class="success-box mt-2">
+                        <div class="success-box-title">💡 Avantage</div>
+                        <p>Modifie l'action RL <strong>le moins possible</strong> tout en garantissant la sécurité sur
+                            tous les horizons.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ==================== SLIDE 9: TIER SYSTEM ==================== -->
+            <div class="slide">
+                <div class="content-single">
+                    <div class="slide-header">
+                        <span class="section-badge contrib">CONTRIBUTION PhD</span>
+                        <h2 class="slide-title">MH-U-CBF: Système de Tiers Adaptatif</h2>
+                    </div>
+
+                    <div class="tier-row tier-1">
+                        <strong>Tier 1</strong>
+                        <span>B(x) > 0.3</span>
+                        <span>slack = 1.0</span>
+                        <span style="color: var(--accent-green);">Zone Sûre</span>
+                    </div>
+                    <div class="tier-row tier-2">
+                        <strong>Tier 2</strong>
+                        <span>0.1 < B(x) ≤ 0.3</span>
+                                <span>slack = 0.7</span>
+                                <span style="color: var(--accent-blue);">Zone Caution</span>
+                    </div>
+                    <div class="tier-row tier-25">
+                        <strong>Tier 2.5</strong>
+                        <span>0.05 < B(x) ≤ 0.1</span>
+                                <span>slack = 0.4 + 0.1·h</span>
+                                <span style="color: var(--accent-purple);">Zone Critique <span
+                                        class="phd-badge">NEW</span></span>
+                    </div>
+                    <div class="tier-row tier-3">
+                        <strong>Tier 3</strong>
+                        <span>B(x) ≤ 0.05</span>
+                        <span>slack = 0.2</span>
+                        <span style="color: var(--accent-red);">Zone Danger</span>
+                    </div>
+
+                    <div class="success-box mt-2">
+                        <div class="success-box-title">🆕 Innovation Tier 2.5</div>
+                        <p>Dans la zone critique (0.05-0.1), le slack s'adapte <strong>par horizon</strong>:</p>
+                        <ul class="feature-list mt-1">
+                            <li>h=1: slack = 0.5 (proche, plus restrictif)</li>
+                            <li>h=3: slack = 0.7 (moyen terme, modéré)</li>
+                            <li>h=5: slack = 0.9 (long terme, plus flexible)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ==================== SLIDE 10: SAOCP CONCEPT ==================== -->
+            <div class="slide">
+                <div class="content-single">
+                    <div class="slide-header">
+                        <span class="section-badge contrib">CONTRIBUTION PhD</span>
+                        <h2 class="slide-title">SAOCP: Safety-Aware Online Conformal Prediction</h2>
+                    </div>
+
+                    <div class="comparison-grid">
+                        <div class="comparison-item">
+                            <div class="comparison-title">❌ Conformal Prediction Standard</div>
+                            <div class="warning-box" style="padding: 0.6rem; margin: 0.5rem 0;">
+                                <p style="margin: 0; text-align: center;"><strong>Mise à jour symétrique</strong></p>
+                            </div>
+                            <ul class="feature-list mt-1">
+                                <li>Traite toutes les erreurs également</li>
+                                <li>Pas de notion de sécurité</li>
+                                <li>Garantie de couverture 90%</li>
+                            </ul>
+                        </div>
+                        <div class="comparison-item">
+                            <div class="comparison-title">✅ SAOCP (Innovation) <span class="phd-badge">PhD</span></div>
+                            <div class="success-box" style="padding: 0.6rem; margin: 0.5rem 0;">
+                                <p style="margin: 0; text-align: center;"><strong>Mise à jour × Poids Sécurité</strong>
+                                </p>
+                            </div>
+                            <ul class="feature-list mt-1">
+                                <li><strong>Asymétrique</strong>: pénalise près des limites</li>
+                                <li><strong>Safety-aware</strong>: plus conservatif si danger</li>
+                                <li><strong>Online</strong>: adaptation temps réel</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="info-box mt-2">
+                        <div class="info-box-title">🔬 Idée Clé</div>
+                        <p><strong>Plus on est proche d'une violation</strong> → plus les intervalles de confiance sont
+                            larges → <strong>plus de marge de sécurité</strong></p>
+                    </div>
+
+                    <div class="grid-3 mt-2">
+                        <div class="card text-center">
+                            <span class="card-icon">🟢</span>
+                            <div class="card-title">Loin des limites</div>
+                            <p class="card-text">Intervalles <strong>étroits</strong><br />Performance optimale</p>
+                        </div>
+                        <div class="card text-center">
+                            <span class="card-icon">🟡</span>
+                            <div class="card-title">Zone intermédiaire</div>
+                            <p class="card-text">Intervalles <strong>modérés</strong><br />Équilibre</p>
+                        </div>
+                        <div class="card text-center">
+                            <span class="card-icon">🔴</span>
+                            <div class="card-title">Proche des limites</div>
+                            <p class="card-text">Intervalles <strong>larges</strong><br />Sécurité maximale</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ==================== SLIDE 11: SAOCP INTEGRATION ==================== -->
+            <div class="slide">
+                <div class="content-single">
+                    <div class="slide-header">
+                        <span class="section-badge contrib">CONTRIBUTION PhD</span>
+                        <h2 class="slide-title">SAOCP: Intégration avec MH-U-CBF</h2>
+                    </div>
+
+                    <div class="dataflow-container">
+                        <div class="dataflow-box">
+                            <strong>Historique</strong><br />
+                            <small>Erreurs passées</small>
+                        </div>
+                        <span class="dataflow-arrow">→</span>
+                        <div class="dataflow-box" style="background: #fef3c7;">
+                            <strong>SAOCP</strong><br />
+                            <small>Quantile adaptatif</small>
+                        </div>
+                        <span class="dataflow-arrow">→</span>
+                        <div class="dataflow-box">
+                            <strong>Bounds [L, U]</strong><br />
+                            <small>Par horizon h</small>
+                        </div>
+                        <span class="dataflow-arrow">→</span>
+                        <div class="dataflow-box phd">
+                            <strong>MH-U-CBF</strong><br />
+                            <small>δ<sub>h</sub> = f(bounds)</small>
+                        </div>
+                    </div>
+
+                    <div class="grid-2 mt-2">
+                        <div>
+                            <h3 style="font-size: 1rem; margin-bottom: 0.8rem;">Marges par Horizon</h3>
+                            <div class="info-box" style="padding: 0.6rem; margin: 0.5rem 0;">
+                                <p style="margin: 0; text-align: center;"><strong>Marge = Facteur × Largeur
+                                        Intervalle</strong></p>
+                            </div>
+                            <table class="mt-1">
+                                <tr>
+                                    <th>h</th>
+                                    <th>k<sub>h</sub></th>
+                                    <th>Interprétation</th>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>0.3</td>
+                                    <td>Court terme, marge petite</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>0.5</td>
+                                    <td>Moyen terme, modéré</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>0.7</td>
+                                    <td>Long terme, marge grande</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div>
+                            <h3 style="font-size: 1rem; margin-bottom: 0.8rem;">Propriétés</h3>
+                            <div class="success-box">
+                                <ul class="feature-list">
+                                    <li><strong>Garantie statistique</strong>: 90% coverage (Holm-Bonferroni)</li>
+                                    <li><strong>Adaptation online</strong>: réagit aux changements de distribution</li>
+                                    <li><strong>Safety-aware</strong>: plus conservatif près des limites</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ==================== SLIDE 12: OPTIMIZEDHYBRID ==================== -->
+            <div class="slide">
+                <div class="content-single">
+                    <div class="slide-header">
+                        <span class="section-badge contrib">BREAKTHROUGH</span>
+                        <h2 class="slide-title">OptimizedHybrid: Physics-Based Safety Shield <span
+                                class="phd-badge">Core</span></h2>
+                    </div>
+
+                    <div class="info-box mb-2">
+                        <div class="info-box-title">🎯 Principe: Ressort + Amortisseur</div>
+                        <p><strong>Action finale</strong> = Action RL + Force de rappel (ressort) + Force
+                            d'amortissement</p>
+                    </div>
+
+                    <div class="grid-2">
+                        <div>
+                            <h3 style="font-size: 1rem; margin-bottom: 0.8rem;">Mécanisme Physique</h3>
+                            <div class="grid-2" style="gap: 0.5rem;">
+                                <div class="card text-center" style="padding: 0.8rem;">
+                                    <span class="card-icon">🔄</span>
+                                    <div class="card-title" style="font-size: 0.9rem;">Ressort</div>
+                                    <p class="card-text" style="font-size: 0.8rem;">Ramène vers le centre de la zone
+                                        sûre</p>
+                                </div>
+                                <div class="card text-center" style="padding: 0.8rem;">
+                                    <span class="card-icon">🛑</span>
+                                    <div class="card-title" style="font-size: 0.9rem;">Amortisseur</div>
+                                    <p class="card-text" style="font-size: 0.8rem;">Évite les oscillations</p>
+                                </div>
+                            </div>
+
+                            <div class="success-box mt-1">
+                                <div class="success-box-title">✅ Garanties</div>
+                                <ul class="feature-list">
+                                    <li><strong>Stabilité</strong>: Convergence garantie</li>
+                                    <li><strong>Robustesse</strong>: Résiste aux perturbations</li>
+                                    <li><strong>Latence</strong>: < 10ms</li>
+                                </ul>
+                            </div>
+                        </div>
                         <div>
                             <h3 style="font-size: 1rem; margin-bottom: 0.8rem;">Résultat: 99.07% CSR</h3>
                             <table>
@@ -2261,7 +2398,8 @@
                         <div class="success-box mt-2">
                             <div class="success-box-title">🔥 Breakthrough: OptimizedHybrid vs MH-U-CBF</div>
                             <p>Sur le <strong>même environnement</strong> (MockMicrogridEnv): OptimizedHybrid =
-                                <strong>75.29%</strong> vs MH-U-CBF = 47.22% (<strong>+28.07 pp</strong>, p ≈ 0)</p>
+                                <strong>75.29%</strong> vs MH-U-CBF = 47.22% (<strong>+28.07 pp</strong>, p ≈ 0)
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -2345,7 +2483,8 @@
                             <p>La valeur <strong>71.21%</strong> pour MH-U-CBF était mesurée sur un environnement
                                 <strong>différent</strong> (plus facile). Sur le MÊME environnement difficile
                                 (MockMicrogridEnv avec IEC 61000 bounds): <strong>MH-U-CBF = 47.22%</strong> vs
-                                <strong>OptimizedHybrid = 75.29%</strong>.</p>
+                                <strong>OptimizedHybrid = 75.29%</strong>.
+                            </p>
                         </div>
 
                         <div class="success-box mt-1">
@@ -2580,9 +2719,11 @@
                                 <p class="card-text"><strong>Safety-Certified Model Evolution</strong> - 5 modules, 201
                                     tests</p>
                             </div>
-                            <div class="card" style="background: linear-gradient(135deg, rgba(124, 58, 237, 0.1), rgba(6, 182, 212, 0.1));">
+                            <div class="card"
+                                style="background: linear-gradient(135deg, rgba(124, 58, 237, 0.1), rgba(6, 182, 212, 0.1));">
                                 <div class="card-title">C8: Load Orchestrator <span class="phd-badge">NEW</span></div>
-                                <p class="card-text"><strong>Smart Délestage "Load Orchestrator"</strong> - C1-C5 criticality</p>
+                                <p class="card-text"><strong>Smart Délestage "Load Orchestrator"</strong> - C1-C5
+                                    criticality</p>
                             </div>
                         </div>
 
@@ -2774,7 +2915,7 @@
             </svg>
         </button>
 
-        <span class="slide-counter"><span id="current">1</span>/<span id="total">22</span></span>
+        <span class="slide-counter"><span id="current">1</span>/<span id="total">24</span></span>
 
         <div class="nav-separator"></div>
 
@@ -2785,25 +2926,29 @@
             <div class="section-dot" data-tooltip="Contexte" data-start="2" data-end="3" onclick="goToSlide(2)"></div>
             <div class="section-dot" data-tooltip="Architecture" data-start="4" data-end="4" onclick="goToSlide(4)">
             </div>
-            <div class="section-dot" data-tooltip="Tunisie 🇹🇳" data-start="5" data-end="5" onclick="goToSlide(5)"
+            <div class="section-dot" data-tooltip="Apollo 🚀" data-start="5" data-end="5" onclick="goToSlide(5)"
+                style="background: linear-gradient(135deg, #2563eb, #7c3aed);"></div>
+            <div class="section-dot" data-tooltip="Tchernobyl ☢️" data-start="6" data-end="6" onclick="goToSlide(6)"
+                style="background: linear-gradient(135deg, #dc2626, #7c3aed);"></div>
+            <div class="section-dot" data-tooltip="Tunisie 🇹🇳" data-start="7" data-end="7" onclick="goToSlide(7)"
                 style="background: linear-gradient(135deg, #dc2626, #ea580c);"></div>
-            <div class="section-dot contrib" data-tooltip="Délestage ★" data-start="6" data-end="6" onclick="goToSlide(6)"
-                style="background: linear-gradient(135deg, #7c3aed, #06b6d4);"></div>
-            <div class="section-dot" data-tooltip="Data Flow" data-start="7" data-end="7" onclick="goToSlide(7)"></div>
-            <div class="section-dot contrib" data-tooltip="MH-U-CBF ★" data-start="8" data-end="10"
-                onclick="goToSlide(8)"></div>
-            <div class="section-dot contrib" data-tooltip="SAOCP ★" data-start="11" data-end="12"
-                onclick="goToSlide(11)">
+            <div class="section-dot contrib" data-tooltip="Délestage ★" data-start="8" data-end="8"
+                onclick="goToSlide(8)" style="background: linear-gradient(135deg, #7c3aed, #06b6d4);"></div>
+            <div class="section-dot" data-tooltip="Data Flow" data-start="9" data-end="9" onclick="goToSlide(9)"></div>
+            <div class="section-dot contrib" data-tooltip="MH-U-CBF ★" data-start="10" data-end="12"
+                onclick="goToSlide(10)"></div>
+            <div class="section-dot contrib" data-tooltip="SAOCP ★" data-start="13" data-end="14"
+                onclick="goToSlide(13)">
             </div>
-            <div class="section-dot contrib" data-tooltip="Hybrid ★" data-start="13" data-end="13"
-                onclick="goToSlide(13)"></div>
-            <div class="section-dot" data-tooltip="Résultats" data-start="14" data-end="17" onclick="goToSlide(14)">
+            <div class="section-dot contrib" data-tooltip="Hybrid ★" data-start="15" data-end="15"
+                onclick="goToSlide(15)"></div>
+            <div class="section-dot" data-tooltip="Résultats" data-start="16" data-end="19" onclick="goToSlide(16)">
             </div>
-            <div class="section-dot contrib" data-tooltip="Contributions ★" data-start="18" data-end="19"
-                onclick="goToSlide(18)"></div>
-            <div class="section-dot" data-tooltip="Publications" data-start="20" data-end="20" onclick="goToSlide(20)">
+            <div class="section-dot contrib" data-tooltip="Contributions ★" data-start="20" data-end="21"
+                onclick="goToSlide(20)"></div>
+            <div class="section-dot" data-tooltip="Publications" data-start="22" data-end="22" onclick="goToSlide(22)">
             </div>
-            <div class="section-dot" data-tooltip="Conclusion" data-start="21" data-end="21" onclick="goToSlide(21)">
+            <div class="section-dot" data-tooltip="Conclusion" data-start="23" data-end="23" onclick="goToSlide(23)">
             </div>
         </div>
 
