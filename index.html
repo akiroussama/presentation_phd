@@ -1311,24 +1311,23 @@
                                 Problématique</span><span>3-4</span></div>
                         <div class="toc-item clickable" onclick="goToSlide(4)"><span><strong>2.</strong> Architecture 5
                                 Niveaux</span><span>5</span></div>
-                        <div class="toc-item clickable" onclick="goToSlide(5)"><span><strong>3.</strong> Data Flow
-                                Pipeline</span><span>6</span></div>
-                        <div class="toc-item contrib clickable" onclick="goToSlide(6)"><span><strong>4.</strong>
-                                MH-U-CBF <span class="phd-badge">PhD</span></span><span>7-9</span></div>
-                        <div class="toc-item contrib clickable" onclick="goToSlide(9)"><span><strong>5.</strong> SAOCP
-                                <span class="phd-badge">PhD</span></span><span>10-11</span></div>
+                        <div class="toc-item clickable" onclick="goToSlide(5)" style="background: linear-gradient(90deg, rgba(220, 38, 38, 0.08), white); border-left-color: #dc2626;"><span><strong>3.</strong> 🇹🇳 Exemple Tunisie (Hôpital Sahloul)</span><span>6</span></div>
+                        <div class="toc-item clickable" onclick="goToSlide(6)"><span><strong>4.</strong> Data Flow
+                                Pipeline</span><span>7</span></div>
+                        <div class="toc-item contrib clickable" onclick="goToSlide(7)"><span><strong>5.</strong>
+                                MH-U-CBF <span class="phd-badge">PhD</span></span><span>8-10</span></div>
                     </div>
                     <div>
-                        <div class="toc-item contrib clickable" onclick="goToSlide(11)"><span><strong>6.</strong>
-                                OptimizedHybrid Shield <span class="phd-badge">PhD</span></span><span>12</span></div>
-                        <div class="toc-item clickable" onclick="goToSlide(12)"><span><strong>7.</strong> Résultats
-                                Expérimentaux</span><span>13-16</span></div>
-                        <div class="toc-item contrib clickable" onclick="goToSlide(16)"><span><strong>8.</strong>
-                                Contributions Scientifiques</span><span>17-18</span></div>
-                        <div class="toc-item clickable" onclick="goToSlide(18)"><span><strong>9.</strong> Publications
-                                Visées</span><span>19</span></div>
-                        <div class="toc-item clickable" onclick="goToSlide(19)"><span><strong>10.</strong>
-                                Conclusion</span><span>20</span></div>
+                        <div class="toc-item contrib clickable" onclick="goToSlide(10)"><span><strong>6.</strong> SAOCP
+                                <span class="phd-badge">PhD</span></span><span>11-12</span></div>
+                        <div class="toc-item contrib clickable" onclick="goToSlide(12)"><span><strong>7.</strong>
+                                OptimizedHybrid Shield <span class="phd-badge">PhD</span></span><span>13</span></div>
+                        <div class="toc-item clickable" onclick="goToSlide(13)"><span><strong>8.</strong> Résultats
+                                Expérimentaux</span><span>14-17</span></div>
+                        <div class="toc-item contrib clickable" onclick="goToSlide(17)"><span><strong>9.</strong>
+                                Contributions Scientifiques</span><span>18-19</span></div>
+                        <div class="toc-item clickable" onclick="goToSlide(20)"><span><strong>10.</strong>
+                                Conclusion</span><span>21</span></div>
                     </div>
                 </div>
 
@@ -1497,6 +1496,98 @@
                     <div class="info-box-title">🧅 Principe "Oignon Robuste"</div>
                     <p>Chaque niveau protège contre les échecs du niveau supérieur. Le RL décide → MH-U-CBF prédit →
                         OptimizedHybrid corrige.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- ==================== SLIDE 5bis: EXEMPLE TUNISIE ==================== -->
+        <div class="slide">
+            <div class="content-single">
+                <div class="slide-header">
+                    <span class="section-badge" style="background: linear-gradient(135deg, #dc2626, #ea580c);">CAS RÉEL</span>
+                    <h2 class="slide-title">Exemple: Hôpital Sahloul, Sousse 🇹🇳</h2>
+                </div>
+
+                <!-- Contexte et Problème -->
+                <div class="grid-2" style="gap: 1rem;">
+                    <div class="card" style="background: linear-gradient(135deg, rgba(239, 68, 68, 0.1), rgba(234, 88, 12, 0.1)); border-left: 4px solid #dc2626;">
+                        <div class="card-title" style="color: #dc2626;">⚠️ L'Incident (14h32, Août)</div>
+                        <p class="card-text"><strong>Nuage de sable du Sahara</strong> arrive soudainement</p>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem; margin-top: 0.5rem; font-size: 0.85rem;">
+                            <div>PV: <strong style="color: #dc2626;">420 → 80 kW</strong></div>
+                            <div>Déficit: <strong style="color: #dc2626;">340 kW!</strong></div>
+                            <div>T°: 42°C (clim à fond)</div>
+                            <div>Charges: Blocs opératoires</div>
+                        </div>
+                    </div>
+                    <div class="card" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border-left: 4px solid var(--accent-green);">
+                        <div class="card-title" style="color: var(--accent-green);">✅ Résultat Final</div>
+                        <p class="card-text"><strong>0 violation</strong>, IRM et blocs opératoires OK</p>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem; margin-top: 0.5rem; font-size: 0.85rem;">
+                            <div>V: 228.5 → <strong style="color: var(--accent-green);">229.8V</strong> ✅</div>
+                            <div>f: 49.91 → <strong style="color: var(--accent-green);">49.98Hz</strong> ✅</div>
+                            <div>Batterie: -253 kW</div>
+                            <div>STEG: +81 kW</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Timeline des 5 niveaux -->
+                <div style="margin-top: 1rem; position: relative;">
+                    <!-- Ligne de temps -->
+                    <div style="position: absolute; left: 50px; top: 0; bottom: 0; width: 3px; background: linear-gradient(180deg, var(--accent-blue), var(--accent-purple), var(--accent-green));"></div>
+
+                    <!-- Level 4 -->
+                    <div style="display: flex; align-items: center; margin-bottom: 0.4rem; position: relative;">
+                        <div style="width: 45px; text-align: right; font-family: 'Fira Code', monospace; font-size: 0.7rem; color: var(--text-secondary);">+8s</div>
+                        <div style="width: 20px; height: 20px; background: var(--accent-blue); border-radius: 50%; margin: 0 10px; z-index: 1; display: flex; align-items: center; justify-content: center; font-size: 0.6rem; color: white; font-weight: bold;">4</div>
+                        <div style="flex: 1; background: rgba(37, 99, 235, 0.1); padding: 0.4rem 0.8rem; border-radius: 8px; font-size: 0.8rem;">
+                            <strong>Interface</strong>: 📺 Alerte jaune sur SCADA → Opérateur Ahmed informé
+                        </div>
+                    </div>
+
+                    <!-- Level 3 -->
+                    <div style="display: flex; align-items: center; margin-bottom: 0.4rem; position: relative;">
+                        <div style="width: 45px; text-align: right; font-family: 'Fira Code', monospace; font-size: 0.7rem; color: var(--text-secondary);">+45s</div>
+                        <div style="width: 20px; height: 20px; background: var(--accent-purple); border-radius: 50%; margin: 0 10px; z-index: 1; display: flex; align-items: center; justify-content: center; font-size: 0.6rem; color: white; font-weight: bold;">3</div>
+                        <div style="flex: 1; background: rgba(124, 58, 237, 0.1); padding: 0.4rem 0.8rem; border-radius: 8px; font-size: 0.8rem;">
+                            <strong>SAOCP</strong>: 🔮 Prédit h=5: V∈[219.8,225.2]V, f∈[49.58,49.82]Hz → <span style="color: var(--accent-orange);">⚠️ Risque</span>
+                        </div>
+                    </div>
+
+                    <!-- Level 2 -->
+                    <div style="display: flex; align-items: center; margin-bottom: 0.4rem; position: relative;">
+                        <div style="width: 45px; text-align: right; font-family: 'Fira Code', monospace; font-size: 0.7rem; color: var(--text-secondary);">+800ms</div>
+                        <div style="width: 20px; height: 20px; background: var(--phd-secondary); border-radius: 50%; margin: 0 10px; z-index: 1; display: flex; align-items: center; justify-content: center; font-size: 0.6rem; color: white; font-weight: bold;">2</div>
+                        <div style="flex: 1; background: rgba(45, 90, 135, 0.1); padding: 0.4rem 0.8rem; border-radius: 8px; font-size: 0.8rem;">
+                            <strong>CPO</strong>: 🧠 Propose u<sub>RL</sub> = [Batt: <span style="color: var(--accent-orange);">+280kW</span>, STEG: +50kW] → <span style="color: var(--accent-orange);">Trop agressif!</span>
+                        </div>
+                    </div>
+
+                    <!-- Level 1 -->
+                    <div style="display: flex; align-items: center; margin-bottom: 0.4rem; position: relative;">
+                        <div style="width: 45px; text-align: right; font-family: 'Fira Code', monospace; font-size: 0.7rem; color: var(--accent-green); font-weight: bold;">+35ms</div>
+                        <div style="width: 20px; height: 20px; background: var(--accent-green); border-radius: 50%; margin: 0 10px; z-index: 1; display: flex; align-items: center; justify-content: center; font-size: 0.6rem; color: white; font-weight: bold;">1</div>
+                        <div style="flex: 1; background: rgba(16, 185, 129, 0.15); padding: 0.4rem 0.8rem; border-radius: 8px; font-size: 0.8rem; border: 1px solid rgba(16, 185, 129, 0.3);">
+                            <strong>MH-U-CBF</strong> <span class="phd-badge" style="font-size: 0.55rem;">PhD</span>: 🛡️ h=5 viole B<sub>f</sub>! Corrige → [Batt: <span style="color: var(--accent-green);">250kW</span>, STEG: <span style="color: var(--accent-green);">80kW</span>]
+                        </div>
+                    </div>
+
+                    <!-- Level 0 -->
+                    <div style="display: flex; align-items: center; position: relative;">
+                        <div style="width: 45px; text-align: right; font-family: 'Fira Code', monospace; font-size: 0.7rem; color: var(--accent-green); font-weight: bold;">+8ms</div>
+                        <div style="width: 20px; height: 20px; background: linear-gradient(135deg, var(--accent-green), var(--accent-cyan)); border-radius: 50%; margin: 0 10px; z-index: 1; display: flex; align-items: center; justify-content: center; font-size: 0.6rem; color: white; font-weight: bold;">0</div>
+                        <div style="flex: 1; background: rgba(16, 185, 129, 0.2); padding: 0.4rem 0.8rem; border-radius: 8px; font-size: 0.8rem; border: 2px solid var(--accent-green);">
+                            <strong>OptimizedHybrid</strong> <span class="phd-badge" style="font-size: 0.55rem;">PhD</span>: ⚡ F<sub>spring</sub>=+2.77kW, F<sub>damp</sub>=+0.5kW → <strong style="color: var(--accent-green);">u<sub>safe</sub> envoyé!</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Message clé -->
+                <div class="success-box mt-2" style="text-align: center;">
+                    <div class="success-box-title">🧅 L'Oignon en Action</div>
+                    <p style="font-size: 0.9rem;">CPO voulait <strong>280kW</strong> (dangereux) → MH-U-CBF réduit à <strong>250kW</strong> → OptimizedHybrid ajoute <strong>+3.27kW</strong> de correction<br/>
+                    <strong style="color: var(--accent-green);">Résultat: Blocs opératoires et IRM jamais interrompus!</strong></p>
                 </div>
             </div>
         </div>
@@ -2407,7 +2498,7 @@
             </svg>
         </button>
 
-        <span class="slide-counter"><span id="current">1</span>/<span id="total">20</span></span>
+        <span class="slide-counter"><span id="current">1</span>/<span id="total">21</span></span>
 
         <div class="nav-separator"></div>
 
@@ -2416,20 +2507,22 @@
             <div class="section-dot active" data-tooltip="Titre" data-start="0" data-end="1" onclick="goToSlide(0)">
             </div>
             <div class="section-dot" data-tooltip="Contexte" data-start="2" data-end="3" onclick="goToSlide(2)"></div>
-            <div class="section-dot" data-tooltip="Architecture" data-start="4" data-end="5" onclick="goToSlide(4)">
+            <div class="section-dot" data-tooltip="Architecture" data-start="4" data-end="4" onclick="goToSlide(4)">
             </div>
-            <div class="section-dot contrib" data-tooltip="MH-U-CBF ★" data-start="6" data-end="8"
-                onclick="goToSlide(6)"></div>
-            <div class="section-dot contrib" data-tooltip="SAOCP ★" data-start="9" data-end="10" onclick="goToSlide(9)">
+            <div class="section-dot" data-tooltip="Tunisie 🇹🇳" data-start="5" data-end="5" onclick="goToSlide(5)" style="background: linear-gradient(135deg, #dc2626, #ea580c);"></div>
+            <div class="section-dot" data-tooltip="Data Flow" data-start="6" data-end="6" onclick="goToSlide(6)"></div>
+            <div class="section-dot contrib" data-tooltip="MH-U-CBF ★" data-start="7" data-end="9"
+                onclick="goToSlide(7)"></div>
+            <div class="section-dot contrib" data-tooltip="SAOCP ★" data-start="10" data-end="11" onclick="goToSlide(10)">
             </div>
-            <div class="section-dot contrib" data-tooltip="Hybrid ★" data-start="11" data-end="11" onclick="goToSlide(11)"></div>
-            <div class="section-dot" data-tooltip="Résultats" data-start="12" data-end="15" onclick="goToSlide(12)">
+            <div class="section-dot contrib" data-tooltip="Hybrid ★" data-start="12" data-end="12" onclick="goToSlide(12)"></div>
+            <div class="section-dot" data-tooltip="Résultats" data-start="13" data-end="16" onclick="goToSlide(13)">
             </div>
-            <div class="section-dot contrib" data-tooltip="Contributions ★" data-start="16" data-end="17"
-                onclick="goToSlide(16)"></div>
-            <div class="section-dot" data-tooltip="Publications" data-start="18" data-end="18" onclick="goToSlide(18)">
+            <div class="section-dot contrib" data-tooltip="Contributions ★" data-start="17" data-end="18"
+                onclick="goToSlide(17)"></div>
+            <div class="section-dot" data-tooltip="Publications" data-start="19" data-end="19" onclick="goToSlide(19)">
             </div>
-            <div class="section-dot" data-tooltip="Conclusion" data-start="19" data-end="19" onclick="goToSlide(19)">
+            <div class="section-dot" data-tooltip="Conclusion" data-start="20" data-end="20" onclick="goToSlide(20)">
             </div>
         </div>
 
